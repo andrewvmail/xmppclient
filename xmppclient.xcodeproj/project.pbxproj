@@ -23,8 +23,8 @@
 		333ACA0A0C501FA2DCFC5C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		333ACBAFC13D1DB26A420F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333ACC9F7F704EB13EADCA0A /* xmppclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		97FCC8253E330B407B1FFB8E /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
-		A6F3F2F0A5DA607EE178DC54 /* Pods-xmppclient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.debug.xcconfig"; path = "Target Support Files/Pods-xmppclient/Pods-xmppclient.debug.xcconfig"; sourceTree = "<group>"; };
+		8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.debug.xcconfig"; sourceTree = "<group>"; };
+		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
 		EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmppclient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,19 +74,18 @@
 			children = (
 				333ACB9DF471A1537041EDF0 /* Products */,
 				333AC1E3B800F815829F4856 /* xmppclient */,
-				EE9408D52D66E32FC598851F /* Pods */,
 				226AD1E02D4632C26F08882A /* Frameworks */,
+				F6BA94B1BB536737D261DA03 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
-		EE9408D52D66E32FC598851F /* Pods */ = {
+		F6BA94B1BB536737D261DA03 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A6F3F2F0A5DA607EE178DC54 /* Pods-xmppclient.debug.xcconfig */,
-				97FCC8253E330B407B1FFB8E /* Pods-xmppclient.release.xcconfig */,
+				8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */,
+				8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */,
 			);
 			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +99,7 @@
 				333AC062731BD6A2CB1608D9 /* Sources */,
 				333AC5CC8FE10DE1D65581F4 /* Frameworks */,
 				333AC48FFDD165FF8C11BB7D /* Resources */,
+				8EE7ECF524595115EC1E9824 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +171,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE7ECF524595115EC1E9824 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftAPI/SwiftAPI.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftAPI.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -270,7 +292,7 @@
 		};
 		333AC137A779C20DF4706949 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6F3F2F0A5DA607EE178DC54 /* Pods-xmppclient.debug.xcconfig */;
+			baseConfigurationReference = 8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = xmppclient/Info.plist;
@@ -338,7 +360,7 @@
 		};
 		333ACEE4DA6385564268EC4A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 97FCC8253E330B407B1FFB8E /* Pods-xmppclient.release.xcconfig */;
+			baseConfigurationReference = 8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = xmppclient/Info.plist;
