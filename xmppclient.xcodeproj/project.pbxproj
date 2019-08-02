@@ -9,22 +9,30 @@
 /* Begin PBXBuildFile section */
 		333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333ACBAFC13D1DB26A420F94 /* Assets.xcassets */; };
 		333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC726BA06BE5F6D23E88C /* AppDelegate.swift */; };
-		333AC605CB81AF4E61A85007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC40E35211F1C310D46B4 /* ViewController.swift */; };
-		333ACE63168B1A7BE1E1C799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333ACC2C703978DF39B8235F /* LaunchScreen.storyboard */; };
-		333ACE8163DA5431ED0114ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333AC4831EDEC4D1455719C1 /* Main.storyboard */; };
 		42469CF4E4DEF0A8FAC4AF83 /* Pods_xmppclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */; };
+		ABC35937A7651A2C10149739 /* sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35BED97FA6FEC3E73C798 /* sequences.swift */; };
+		ABC359BCC108FF1B46A20EEA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35A167F984100974252C4 /* Main.swift */; };
+		ABC35C477C6BA2D5F3B3630C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */; };
+		ABC35D0CEF4DE006CC7CB7A1 /* state.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC357A462884482090E07CD /* state.swift */; };
+		ABC35D995307FB4658620B85 /* controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35999DB2FB853394F1521 /* controller.swift */; };
+		ABC35DD5752EE73A0FD0279B /* actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35953F246381E07E3CE24 /* actions.swift */; };
+		ABC35FA52C69BAB5C7324A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC35355BC247AA4F31EB674 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		333AC3BB2AC60C4C12CAEBE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		333AC40E35211F1C310D46B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		333AC52143BE05ED202A2BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		333AC726BA06BE5F6D23E88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		333ACA0A0C501FA2DCFC5C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		333ACBAFC13D1DB26A420F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333ACC9F7F704EB13EADCA0A /* xmppclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
+		ABC35355BC247AA4F31EB674 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ui/Main.storyboard; sourceTree = "<group>"; };
+		ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ui/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABC357A462884482090E07CD /* state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = state.swift; path = main/state.swift; sourceTree = "<group>"; };
+		ABC35953F246381E07E3CE24 /* actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = actions.swift; path = main/actions.swift; sourceTree = "<group>"; };
+		ABC35999DB2FB853394F1521 /* controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = controller.swift; path = main/controller.swift; sourceTree = "<group>"; };
+		ABC35A167F984100974252C4 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main.swift; path = ui/Main.swift; sourceTree = "<group>"; };
+		ABC35BED97FA6FEC3E73C798 /* sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = sequences.swift; path = main/sequences.swift; sourceTree = "<group>"; };
 		EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmppclient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -53,10 +61,14 @@
 			children = (
 				333ACA0A0C501FA2DCFC5C6D /* Info.plist */,
 				333ACBAFC13D1DB26A420F94 /* Assets.xcassets */,
-				333ACC2C703978DF39B8235F /* LaunchScreen.storyboard */,
 				333AC726BA06BE5F6D23E88C /* AppDelegate.swift */,
-				333AC4831EDEC4D1455719C1 /* Main.storyboard */,
-				333AC40E35211F1C310D46B4 /* ViewController.swift */,
+				ABC35BED97FA6FEC3E73C798 /* sequences.swift */,
+				ABC357A462884482090E07CD /* state.swift */,
+				ABC35953F246381E07E3CE24 /* actions.swift */,
+				ABC35355BC247AA4F31EB674 /* Main.storyboard */,
+				ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */,
+				ABC35A167F984100974252C4 /* Main.swift */,
+				ABC35999DB2FB853394F1521 /* controller.swift */,
 			);
 			path = xmppclient;
 			sourceTree = "<group>";
@@ -143,8 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */,
-				333ACE63168B1A7BE1E1C799 /* LaunchScreen.storyboard in Resources */,
-				333ACE8163DA5431ED0114ED /* Main.storyboard in Resources */,
+				ABC35FA52C69BAB5C7324A02 /* Main.storyboard in Resources */,
+				ABC35C477C6BA2D5F3B3630C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,30 +215,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */,
-				333AC605CB81AF4E61A85007 /* ViewController.swift in Sources */,
+				ABC35937A7651A2C10149739 /* sequences.swift in Sources */,
+				ABC35D0CEF4DE006CC7CB7A1 /* state.swift in Sources */,
+				ABC35DD5752EE73A0FD0279B /* actions.swift in Sources */,
+				ABC359BCC108FF1B46A20EEA /* Main.swift in Sources */,
+				ABC35D995307FB4658620B85 /* controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		333AC4831EDEC4D1455719C1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				333AC3BB2AC60C4C12CAEBE9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		333ACC2C703978DF39B8235F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				333AC52143BE05ED202A2BC4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		333AC077DB2EE89A25DFD73A /* Debug */ = {
