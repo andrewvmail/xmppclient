@@ -10,6 +10,7 @@
 		333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333ACBAFC13D1DB26A420F94 /* Assets.xcassets */; };
 		333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC726BA06BE5F6D23E88C /* AppDelegate.swift */; };
 		42469CF4E4DEF0A8FAC4AF83 /* Pods_xmppclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */; };
+		ABC35072A06D1C1F302D1843 /* ViewHelperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC357015D581BCE252D3DD0 /* ViewHelperController.swift */; };
 		ABC35937A7651A2C10149739 /* sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35BED97FA6FEC3E73C798 /* sequences.swift */; };
 		ABC359BCC108FF1B46A20EEA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35A167F984100974252C4 /* Main.swift */; };
 		ABC35C477C6BA2D5F3B3630C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */; };
@@ -28,6 +29,7 @@
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
 		ABC35355BC247AA4F31EB674 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ui/Main.storyboard; sourceTree = "<group>"; };
 		ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ui/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABC357015D581BCE252D3DD0 /* ViewHelperController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewHelperController.swift; path = ui/ViewHelperController.swift; sourceTree = "<group>"; };
 		ABC357A462884482090E07CD /* state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = state.swift; path = main/state.swift; sourceTree = "<group>"; };
 		ABC35953F246381E07E3CE24 /* actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = actions.swift; path = main/actions.swift; sourceTree = "<group>"; };
 		ABC35999DB2FB853394F1521 /* controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = controller.swift; path = main/controller.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */,
 				ABC35A167F984100974252C4 /* Main.swift */,
 				ABC35999DB2FB853394F1521 /* controller.swift */,
+				ABC357015D581BCE252D3DD0 /* ViewHelperController.swift */,
 			);
 			path = xmppclient;
 			sourceTree = "<group>";
@@ -129,6 +132,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = Momo;
+				TargetAttributes = {
+					333AC71FFD71058CC940E270 = {
+						DevelopmentTeam = GK2FD9LYA7;
+					};
+				};
 			};
 			buildConfigurationList = 333ACBA7CAA5DB6AEF270FCD /* Build configuration list for PBXProject "xmppclient" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -220,6 +228,7 @@
 				ABC35DD5752EE73A0FD0279B /* actions.swift in Sources */,
 				ABC359BCC108FF1B46A20EEA /* Main.swift in Sources */,
 				ABC35D995307FB4658620B85 /* controller.swift in Sources */,
+				ABC35072A06D1C1F302D1843 /* ViewHelperController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +301,9 @@
 			baseConfigurationReference = 8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GK2FD9LYA7;
 				INFOPLIST_FILE = xmppclient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.andrewvtan.xmppclient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,7 +371,9 @@
 			baseConfigurationReference = 8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GK2FD9LYA7;
 				INFOPLIST_FILE = xmppclient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.andrewvtan.xmppclient;
 				PRODUCT_NAME = "$(TARGET_NAME)";

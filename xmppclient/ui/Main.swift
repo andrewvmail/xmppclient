@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: ViewHelperController {
     @IBOutlet var textLabel: UILabel?
 
     var count: Int? = 0
@@ -8,9 +8,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.observation = (UIApplication.shared.delegate as! AppDelegate)
-                .controller.State.observe(\state.count, options: [.initial]) { (model, change) in
-            print("moodel", model.count)
+
+        observation = State().observe(\state.count, options: [.initial])
+        { (model, change) in
             self.textLabel?.text = "\(model.count)"
         }
     }
