@@ -1,9 +1,3 @@
-ignore
-# .gitignore file for Xcode / AppCode projects
-# based on https://github.com/github/gitignore/blob/master/Objective-C.gitignore
-
-# Xcode
-#
 build/
 *.pbxuser
 !default.pbxuser
@@ -19,15 +13,7 @@ xcuserdata
 DerivedData
 *.hmap
 *.ipa
-
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control?
-#
-# Pods/
-
+Pods/
 # Additions
 .idea/
 .DS_Store
