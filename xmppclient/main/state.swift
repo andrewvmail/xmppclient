@@ -6,5 +6,5 @@
 import Foundation
 
 struct state {
-    var count = 0;
+    var count:Int = 0;
 }
