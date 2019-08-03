@@ -3,7 +3,7 @@ import UIKit
 import Starscream
 
 class Controller {
-    var State: state
+    var state: State
     var socket: WebSocket
 
     init() {
@@ -24,6 +24,6 @@ class Controller {
         socket.connect()
         socket.write(string: "Hi Server!")
 
-        self.State = state.init()
+        self.state = State.init()
     }
 }

@@ -1,5 +1,5 @@
 import Foundation
 
-class state: NSObject {
+class State: NSObject {
     @objc dynamic var count: Int = 0;
 }

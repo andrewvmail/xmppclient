@@ -1,17 +1,6 @@
 import Foundation
+import UIKit
 
-struct sequences {
-
-    func petMomoSequence()  {
-        actions.init().add()
-        actions.init().add()
-    }
-    func feedMomoSequence() {
-        actions.init().add()
-        actions.init().add()
-        actions.init().add()
-        actions.init().add()
-        actions.init().add()
-        self.petMomoSequence()
-    }
+func increment() {
+    run(action: addOneToCount, name: "addOneToCount")
 }

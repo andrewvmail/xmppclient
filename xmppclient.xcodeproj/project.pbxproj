@@ -10,12 +10,12 @@
 		333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333ACBAFC13D1DB26A420F94 /* Assets.xcassets */; };
 		333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC726BA06BE5F6D23E88C /* AppDelegate.swift */; };
 		333AC8F98529D7F3E5096381 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 333ACFAEEA1068E22AFF4F19 /* README */; };
+		333ACF2A5F8328FC1FED7FDA /* libs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC8F4AE2CA08981ECEAA1 /* libs.swift */; };
 		42469CF4E4DEF0A8FAC4AF83 /* Pods_xmppclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */; };
-		ABC35072A06D1C1F302D1843 /* ViewHelperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC357015D581BCE252D3DD0 /* ViewHelperController.swift */; };
 		ABC35937A7651A2C10149739 /* sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35BED97FA6FEC3E73C798 /* sequences.swift */; };
 		ABC359BCC108FF1B46A20EEA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35A167F984100974252C4 /* Main.swift */; };
 		ABC35C477C6BA2D5F3B3630C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */; };
-		ABC35D0CEF4DE006CC7CB7A1 /* state.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC357A462884482090E07CD /* state.swift */; };
+		ABC35D0CEF4DE006CC7CB7A1 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC357A462884482090E07CD /* State.swift */; };
 		ABC35D995307FB4658620B85 /* controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35999DB2FB853394F1521 /* controller.swift */; };
 		ABC35DD5752EE73A0FD0279B /* actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35953F246381E07E3CE24 /* actions.swift */; };
 		ABC35FA52C69BAB5C7324A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC35355BC247AA4F31EB674 /* Main.storyboard */; };
@@ -23,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		333AC726BA06BE5F6D23E88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		333AC8F4AE2CA08981ECEAA1 /* libs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = libs.swift; path = main/libs.swift; sourceTree = "<group>"; };
 		333ACA0A0C501FA2DCFC5C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		333ACBAFC13D1DB26A420F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333ACC9F7F704EB13EADCA0A /* xmppclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,8 +32,7 @@
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
 		ABC35355BC247AA4F31EB674 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ui/Main.storyboard; sourceTree = "<group>"; };
 		ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ui/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ABC357015D581BCE252D3DD0 /* ViewHelperController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewHelperController.swift; path = ui/ViewHelperController.swift; sourceTree = "<group>"; };
-		ABC357A462884482090E07CD /* state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = state.swift; path = main/state.swift; sourceTree = "<group>"; };
+		ABC357A462884482090E07CD /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = State.swift; path = main/State.swift; sourceTree = "<group>"; };
 		ABC35953F246381E07E3CE24 /* actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = actions.swift; path = main/actions.swift; sourceTree = "<group>"; };
 		ABC35999DB2FB853394F1521 /* controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = controller.swift; path = main/controller.swift; sourceTree = "<group>"; };
 		ABC35A167F984100974252C4 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Main.swift; path = ui/Main.swift; sourceTree = "<group>"; };
@@ -67,13 +67,13 @@
 				333ACBAFC13D1DB26A420F94 /* Assets.xcassets */,
 				333AC726BA06BE5F6D23E88C /* AppDelegate.swift */,
 				ABC35BED97FA6FEC3E73C798 /* sequences.swift */,
-				ABC357A462884482090E07CD /* state.swift */,
+				ABC357A462884482090E07CD /* State.swift */,
 				ABC35953F246381E07E3CE24 /* actions.swift */,
 				ABC35355BC247AA4F31EB674 /* Main.storyboard */,
 				ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */,
 				ABC35A167F984100974252C4 /* Main.swift */,
 				ABC35999DB2FB853394F1521 /* controller.swift */,
-				ABC357015D581BCE252D3DD0 /* ViewHelperController.swift */,
+				333AC8F4AE2CA08981ECEAA1 /* libs.swift */,
 			);
 			path = xmppclient;
 			sourceTree = "<group>";
@@ -226,11 +226,11 @@
 			files = (
 				333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */,
 				ABC35937A7651A2C10149739 /* sequences.swift in Sources */,
-				ABC35D0CEF4DE006CC7CB7A1 /* state.swift in Sources */,
+				ABC35D0CEF4DE006CC7CB7A1 /* State.swift in Sources */,
 				ABC35DD5752EE73A0FD0279B /* actions.swift in Sources */,
 				ABC359BCC108FF1B46A20EEA /* Main.swift in Sources */,
 				ABC35D995307FB4658620B85 /* controller.swift in Sources */,
-				ABC35072A06D1C1F302D1843 /* ViewHelperController.swift in Sources */,
+				333ACF2A5F8328FC1FED7FDA /* libs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
