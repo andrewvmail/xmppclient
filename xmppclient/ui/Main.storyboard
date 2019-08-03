@@ -25,17 +25,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQu-S0-tVH">
-                                <rect key="frame" x="163" y="484" width="70" height="30"/>
-                                <state key="normal" title="Pet momo"/>
+                                <rect key="frame" x="157" y="377" width="83" height="30"/>
+                                <state key="normal" title="increment +"/>
                                 <connections>
-                                    <action selector="tapPetMomoWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isF-P2-FLE"/>
+                                    <action selector="tapIncrementWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isF-P2-FLE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mt-Wx-jZR">
+                                <rect key="frame" x="157" y="502" width="85" height="30"/>
+                                <state key="normal" title="decrement -"/>
+                                <connections>
+                                    <action selector="tapDecrementWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lup-co-pt9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Mt-Wx-jZR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GXx-yA-E4D"/>
                             <constraint firstItem="hQu-S0-tVH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LdD-Er-pqw"/>
-                            <constraint firstItem="hQu-S0-tVH" firstAttribute="top" secondItem="7x7-ZK-8g3" secondAttribute="bottom" constant="17" id="NhY-zz-QBT"/>
+                            <constraint firstItem="6Mt-Wx-jZR" firstAttribute="top" secondItem="7x7-ZK-8g3" secondAttribute="bottom" constant="9" id="Lrz-pR-aRJ"/>
+                            <constraint firstItem="7x7-ZK-8g3" firstAttribute="top" secondItem="hQu-S0-tVH" secondAttribute="bottom" constant="9" id="Zjt-bW-0fc"/>
                             <constraint firstItem="7x7-ZK-8g3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jON-dm-wzq"/>
                             <constraint firstItem="7x7-ZK-8g3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xxc-Rx-6r6"/>
                         </constraints>

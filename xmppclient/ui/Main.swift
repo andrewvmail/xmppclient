@@ -14,7 +14,10 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func tapPetMomo(sender: UIButton) {
+    @IBAction func tapIncrement(sender: UIButton) {
         run(sequence: increment, name: "increment")
+    }
+    @IBAction func tapDecrement(sender: UIButton) {
+        run(sequence: decrement, name: "decrement")
     }
 }

@@ -3,10 +3,17 @@ import UIKit
 import Starscream
 
 class Controller {
-    var state: State
-    var socket: WebSocket
+    var state: State!
+    var socket: WebSocket!
 
     init() {
+        self.state = State.init()
+        #if DEBUG
+        connectToDebuger()
+        #endif
+    }
+
+    func connectToDebuger() {
         print("init controller")
         socket = WebSocket(url: URL(string: "ws://localhost:8080/")!)
         socket.onConnect = {
@@ -23,7 +30,5 @@ class Controller {
         }
         socket.connect()
         socket.write(string: "Hi Server!")
-
-        self.state = State.init()
     }
 }
