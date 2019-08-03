@@ -1,6 +1,7 @@
 import Foundation
 
 struct sequences {
+
     func petMomoSequence()  {
         actions.init().add()
         actions.init().add()

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333ACBAFC13D1DB26A420F94 /* Assets.xcassets */; };
 		333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC726BA06BE5F6D23E88C /* AppDelegate.swift */; };
+		333AC8F98529D7F3E5096381 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 333ACFAEEA1068E22AFF4F19 /* README */; };
 		42469CF4E4DEF0A8FAC4AF83 /* Pods_xmppclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */; };
 		ABC35072A06D1C1F302D1843 /* ViewHelperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC357015D581BCE252D3DD0 /* ViewHelperController.swift */; };
 		ABC35937A7651A2C10149739 /* sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35BED97FA6FEC3E73C798 /* sequences.swift */; };
@@ -25,6 +26,7 @@
 		333ACA0A0C501FA2DCFC5C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		333ACBAFC13D1DB26A420F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333ACC9F7F704EB13EADCA0A /* xmppclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		333ACFAEEA1068E22AFF4F19 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
 		ABC35355BC247AA4F31EB674 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ui/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				333AC1E3B800F815829F4856 /* xmppclient */,
 				226AD1E02D4632C26F08882A /* Frameworks */,
 				F6BA94B1BB536737D261DA03 /* Pods */,
+				333ACFAEEA1068E22AFF4F19 /* README */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +168,7 @@
 				333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */,
 				ABC35FA52C69BAB5C7324A02 /* Main.storyboard in Resources */,
 				ABC35C477C6BA2D5F3B3630C /* LaunchScreen.storyboard in Resources */,
+				333AC8F98529D7F3E5096381 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,21 +202,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftAPI/SwiftAPI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftAPI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
