@@ -10,11 +10,14 @@ func toggleAllChecked() {
 }
 
 func addTodo() {
+    controller().state.todos.todos.append("MOMO!!!!!!")
+}
+
 //    store.set(state.todos[id.create()], {
 //        title: get(state.newTodoTitle),
 //        completed: false,
 //    })
-}
+
 
 func clearCompletedTodos() {
 //    const todos = get(state.todos)

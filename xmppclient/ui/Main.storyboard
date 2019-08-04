@@ -18,25 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mj6-a1-Bgt">
-                                <rect key="frame" x="0.0" y="44" width="414" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="rey-Gg-dFp">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rey-Gg-dFp" id="Dtk-N2-Ho0">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rTu-a4-Hf4"/>
-                                </connections>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Momo is a cat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7x7-ZK-8g3">
                                 <rect key="frame" x="153.5" y="777" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -57,10 +38,38 @@
                                     <action selector="tapDecrementWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lup-co-pt9"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mj6-a1-Bgt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="rey-Gg-dFp">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rey-Gg-dFp" id="Dtk-N2-Ho0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rTu-a4-Hf4"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoT-Hf-qxY">
+                                <rect key="frame" x="174" y="433" width="67" height="30"/>
+                                <state key="normal" title="Add to do"/>
+                                <connections>
+                                    <action selector="tapAddTodoWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5d-GC-ptg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7x7-ZK-8g3" secondAttribute="bottom" constant="64" id="1AY-wN-GDC"/>
+                            <constraint firstItem="LoT-Hf-qxY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="B2P-t3-AC8"/>
+                            <constraint firstItem="LoT-Hf-qxY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CtS-wP-UoH"/>
                             <constraint firstItem="6Mt-Wx-jZR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GXx-yA-E4D"/>
                             <constraint firstItem="hQu-S0-tVH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LdD-Er-pqw"/>
                             <constraint firstItem="6Mt-Wx-jZR" firstAttribute="top" secondItem="7x7-ZK-8g3" secondAttribute="bottom" constant="9" id="Lrz-pR-aRJ"/>
@@ -71,6 +80,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="mj6-a1-Bgt" id="l5M-EA-RzA"/>
                         <outlet property="textLabel" destination="7x7-ZK-8g3" id="Aa3-By-FVz"/>
                     </connections>
                 </viewController>

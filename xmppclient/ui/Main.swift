@@ -3,6 +3,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet var textLabel: UILabel?
+    @IBOutlet var tableView: UITableView!
 
     var count: Int? = 0
     var counterObservation: NSKeyValueObservation?
@@ -16,6 +17,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
         todosObservation = controller().state.todos.observe(\.todos, options: [.initial]) { (model, change) in
             self.todos = model.todos
+            self.tableView.reloadData()
+
+            // scroll to bottom
+            self.tableView.layoutIfNeeded()
+            self.tableView.setContentOffset(CGPoint(
+                    x: 0,
+                    y: self.tableView.contentSize.height - self.tableView.frame.height),
+                    animated: false)
         }
     }
 
@@ -25,6 +34,10 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     @IBAction func tapDecrement(sender: UIButton) {
         run(sequence: decrement, name: "decrement")
+    }
+
+    @IBAction func tapAddTodo(sender: UIButton) {
+        run(sequence: submitNewTodoSequence, name: "submitNewTodoSequence")
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

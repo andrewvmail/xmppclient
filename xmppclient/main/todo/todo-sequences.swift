@@ -25,7 +25,7 @@ func changeFilterSequence() {
 }
 
 func submitNewTodoSequence() {
-    // = [
+    run(action: addTodo, name: "addTodo")
 }
 
 //    when(state.newTodoTitle),
