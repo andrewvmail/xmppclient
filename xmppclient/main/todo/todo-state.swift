@@ -6,5 +6,5 @@ struct Todo {
 }
 
 class TodoState: NSObject {
-    var Todos: [Todo] = []
+    @objc dynamic var todos: [String] = ["Computers", "Photography", "Cars", "Reading", "Learning New Things"]
 }

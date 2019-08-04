@@ -2,18 +2,20 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
 
-    var hobbies: [String] = ["Computers", "Photography", "Cars", "Reading", "Learning New Things"]
-
-
     @IBOutlet var textLabel: UILabel?
 
     var count: Int? = 0
-    var observation: NSKeyValueObservation?
+    var counterObservation: NSKeyValueObservation?
+    var todosObservation: NSKeyValueObservation?
+    var todos: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        observation = controller().state.counter.observe(\.count, options: [.initial]) { (model, change) in
+        counterObservation = controller().state.counter.observe(\.count, options: [.initial]) { (model, change) in
             self.textLabel?.text = "\(model.count)"
+        }
+        todosObservation = controller().state.todos.observe(\.todos, options: [.initial]) { (model, change) in
+            self.todos = model.todos
         }
     }
 
@@ -26,12 +28,12 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.todos.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
-        cell.textLabel?.text = hobbies[indexPath.row]
+        cell.textLabel?.text = todos[indexPath.row]
         return cell
     }
 }
