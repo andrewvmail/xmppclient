@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 func changeNewTodoTitleSequence() {
 //= set(state.newTodoTitle, props.title)
@@ -24,8 +25,8 @@ func changeFilterSequence() {
     // = set(state.filter, props.filter)
 }
 
-func submitNewTodoSequence() {
-    run(action: addTodo, name: "addTodo")
+func submitNewTodoSequence(props: String?) {
+    run(action: addTodo, name: "addTodo", props: props!)
 }
 
 //    when(state.newTodoTitle),

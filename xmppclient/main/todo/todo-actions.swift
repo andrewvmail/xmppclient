@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 func toggleAllChecked() {
 //    const isCompleted = !get(state.isAllChecked)
@@ -9,8 +10,9 @@ func toggleAllChecked() {
 //    })
 }
 
-func addTodo() {
-    controller().state.todos.todos.append("MOMO!!!!!!")
+func addTodo(props: String) {
+    controller().state.todos.todos.append(props)
+    controller().views.clearInput()
 }
 
 //    store.set(state.todos[id.create()], {

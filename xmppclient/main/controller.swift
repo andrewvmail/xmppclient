@@ -6,6 +6,9 @@ class Controller {
     var state: State!
     var socket: WebSocket!
 
+    var views: ViewController!
+
+
     init() {
         self.state = State.init()
         #if DEBUG
@@ -15,7 +18,7 @@ class Controller {
 
     func connectToDebuger() {
         print("init controller")
-        socket = WebSocket(url: URL(string: "ws://localhost:8080/")!)
+        socket = WebSocket(url: URL(string: "ws://192.168.50.71:8080/")!)
         socket.onConnect = {
             print("websocket is connected")
         }

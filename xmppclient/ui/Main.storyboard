@@ -64,11 +64,19 @@
                                     <action selector="tapAddTodoWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5d-GC-ptg"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmT-Ec-bOe">
+                                <rect key="frame" x="121" y="471" width="170" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7x7-ZK-8g3" secondAttribute="bottom" constant="64" id="1AY-wN-GDC"/>
+                            <constraint firstItem="rmT-Ec-bOe" firstAttribute="top" secondItem="LoT-Hf-qxY" secondAttribute="baseline" constant="21.5" id="50W-KW-Wxn"/>
                             <constraint firstItem="LoT-Hf-qxY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="B2P-t3-AC8"/>
+                            <constraint firstItem="rmT-Ec-bOe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CYp-o6-RuM"/>
                             <constraint firstItem="LoT-Hf-qxY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CtS-wP-UoH"/>
                             <constraint firstItem="6Mt-Wx-jZR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GXx-yA-E4D"/>
                             <constraint firstItem="hQu-S0-tVH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LdD-Er-pqw"/>
@@ -82,10 +90,12 @@
                     <connections>
                         <outlet property="tableView" destination="mj6-a1-Bgt" id="l5M-EA-RzA"/>
                         <outlet property="textLabel" destination="7x7-ZK-8g3" id="Aa3-By-FVz"/>
+                        <outlet property="todoInput" destination="rmT-Ec-bOe" id="ty6-N1-JBS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
         </scene>
     </scenes>
 </document>
