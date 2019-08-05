@@ -32,6 +32,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         controller().views = self
         counterObservation = controller().state.counter.observe(\.count, options: [.initial]) { (model, change) in
             self.textLabel?.text = "\(model.count)"
@@ -50,5 +51,17 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     func clearInput() {
         todoInput.text = ""
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
