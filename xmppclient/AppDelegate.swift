@@ -1,5 +1,6 @@
 import UIKit
-
+import Foundation
+import IoniconsKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -9,11 +10,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
 
-        window = UIWindow(frame:UIScreen.main.bounds)
+        let tabBarController = UITabBarController()
+//        tabBarController.navigationController?.isNavigationBarHidden = true
+
+        let iconList = UIImage.ionicon(with: .iosList, textColor: UIColor.orange, size: CGSize(width: 18, height: 18))
+        let stopWatch = UIImage.ionicon(with: .iosStopwatch, textColor: UIColor.orange, size: CGSize(width: 18, height: 18))
+
+        let firstViewController = ViewController()
+        firstViewController.tabBarItem = UITabBarItem(title: "Todo", image: iconList, tag: 1)
+        firstViewController.view.backgroundColor = UIColor.orange
+        firstViewController.title =  "Todo"
+//        firstViewController.navigationController?.isNavigationBarHidden = true;
+
+        let secondViewController = CounterPageController()
+        secondViewController.tabBarItem = UITabBarItem(title: "Counter", image: stopWatch, tag: 0)
+        secondViewController.title =  "Counter"
+//        secondViewController.navigationController?.navigationBar.isHidden = true;
+
+        let tabBarList = [secondViewController, firstViewController]
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UINavigationController(rootViewController: tabBarController)
+//        window?.rootViewController?.navigationController?.navigationBar.isHidden = true;
+
         window?.makeKeyAndVisible()
-        window?.rootViewController = ViewController()
+
+        tabBarController.viewControllers = tabBarList
+
+        tabBarController.navigationController?.isNavigationBarHidden = true;
 
         return true
     }

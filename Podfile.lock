@@ -1,20 +1,24 @@
 PODS:
+  - IoniconsKit (1.2.0)
   - Starscream (3.0.6)
   - SwiftAPI (1.6.2)
 
 DEPENDENCIES:
+  - IoniconsKit
   - Starscream (~> 3.0.2)
   - SwiftAPI
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - IoniconsKit
     - Starscream
     - SwiftAPI
 
 SPEC CHECKSUMS:
+  IoniconsKit: 97db493dc2dd21f4959daec1b155f718e46b5916
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftAPI: ea2bd310f2444b4afa83250a17aaefa020bbc42c
 
-PODFILE CHECKSUM: ce04e14d3bf3dfe2db92de7c0e9709cc6643decb
+PODFILE CHECKSUM: ca3de18b3785d90a93911782db37a7e02d63e22c
 
 COCOAPODS: 1.7.5

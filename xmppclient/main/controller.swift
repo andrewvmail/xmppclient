@@ -6,7 +6,7 @@ class Controller {
     var state: State!
     var socket: WebSocket!
 
-    var views: ViewController!
+//    var views: ViewController!
 
 
     init() {
