@@ -12,7 +12,7 @@ func toggleAllChecked() {
 
 func addTodo(props: String) {
     controller().state.todos.todos.append(props)
-    controller().views.clearInput()
+//    controller().views.clearInput()
 }
 
 //    store.set(state.todos[id.create()], {

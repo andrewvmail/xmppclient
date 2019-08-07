@@ -13,11 +13,15 @@
 		333AC40E1972AB0A507A063F /* todo-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC7FDEF70EBFCFFBF3B25 /* todo-sequences.swift */; };
 		333AC426FE6F8BA16CF148CC /* state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC0347D0933A02E221609 /* state.swift */; };
 		333AC5419BE6ED61C3CCFAEF /* todo-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC53B674FBCE61232C89B /* todo-actions.swift */; };
+		333AC715DA54F611F1059C04 /* CounterPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC5CC3439E77D0C1BB1E6 /* CounterPageController.swift */; };
 		333AC7CB572D9EA8A687ABAA /* libs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACE9DAE3679202D4BDA6C /* libs.swift */; };
+		333AC8A4242D2D6DA83B86D9 /* CounterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC6B52768C2F0A44FD3E1 /* CounterPageView.swift */; };
 		333AC8F98529D7F3E5096381 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 333ACFAEEA1068E22AFF4F19 /* README.md */; };
 		333AC93A5A6DA5EA8554A0B4 /* todo-state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC3890BD27E2F478A6BE4 /* todo-state.swift */; };
 		333ACC1E7E8DA3EFA67B2D24 /* counter-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC94C6D059EF0E84CA105 /* counter-sequences.swift */; };
+		333ACC8D4DEAB6C87E6CC59C /* TodoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACC5DC6C2CF3EA1B99926 /* TodoPageController.swift */; };
 		333ACCD60A033D1107934CBA /* counter-state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC03FB9DB6436CCB15FA1 /* counter-state.swift */; };
+		333ACD9EFF5FC88CF0CEDE76 /* TodoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC504A342CF5E9EBBCACB /* TodoPageView.swift */; };
 		333ACDBBC9BA8577788E9754 /* counter-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC6389290D0E9A4FED95D /* counter-actions.swift */; };
 		42469CF4E4DEF0A8FAC4AF83 /* Pods_xmppclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */; };
 		ABC359BCC108FF1B46A20EEA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35A167F984100974252C4 /* Main.swift */; };
@@ -29,13 +33,17 @@
 		333AC0347D0933A02E221609 /* state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = state.swift; sourceTree = "<group>"; };
 		333AC03FB9DB6436CCB15FA1 /* counter-state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-state.swift"; sourceTree = "<group>"; };
 		333AC3890BD27E2F478A6BE4 /* todo-state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "todo-state.swift"; sourceTree = "<group>"; };
+		333AC504A342CF5E9EBBCACB /* TodoPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPageView.swift; sourceTree = "<group>"; };
 		333AC53B674FBCE61232C89B /* todo-actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "todo-actions.swift"; sourceTree = "<group>"; };
+		333AC5CC3439E77D0C1BB1E6 /* CounterPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterPageController.swift; sourceTree = "<group>"; };
 		333AC6389290D0E9A4FED95D /* counter-actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-actions.swift"; sourceTree = "<group>"; };
+		333AC6B52768C2F0A44FD3E1 /* CounterPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterPageView.swift; sourceTree = "<group>"; };
 		333AC726BA06BE5F6D23E88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		333AC7FDEF70EBFCFFBF3B25 /* todo-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "todo-sequences.swift"; sourceTree = "<group>"; };
 		333AC94C6D059EF0E84CA105 /* counter-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-sequences.swift"; sourceTree = "<group>"; };
 		333ACA0A0C501FA2DCFC5C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		333ACBAFC13D1DB26A420F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		333ACC5DC6C2CF3EA1B99926 /* TodoPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPageController.swift; sourceTree = "<group>"; };
 		333ACC9F7F704EB13EADCA0A /* xmppclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		333ACCD997E3FBCEDA78BEAA /* controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controller.swift; sourceTree = "<group>"; };
 		333ACE9DAE3679202D4BDA6C /* libs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libs.swift; sourceTree = "<group>"; };
@@ -80,6 +88,15 @@
 			path = main;
 			sourceTree = "<group>";
 		};
+		333AC1DD9145B552CF1B9637 /* TodoPage */ = {
+			isa = PBXGroup;
+			children = (
+				333AC504A342CF5E9EBBCACB /* TodoPageView.swift */,
+				333ACC5DC6C2CF3EA1B99926 /* TodoPageController.swift */,
+			);
+			path = TodoPage;
+			sourceTree = "<group>";
+		};
 		333AC1E3B800F815829F4856 /* xmppclient */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +115,8 @@
 				ABC353F04EC4C3BEE7DDEE6D /* LaunchScreen.storyboard */,
 				ABC35355BC247AA4F31EB674 /* Main.storyboard */,
 				ABC35A167F984100974252C4 /* Main.swift */,
+				333ACEC010378F9968BD406F /* CounterPage */,
+				333AC1DD9145B552CF1B9637 /* TodoPage */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -119,6 +138,15 @@
 				F6BA94B1BB536737D261DA03 /* Pods */,
 				333ACFAEEA1068E22AFF4F19 /* README.md */,
 			);
+			sourceTree = "<group>";
+		};
+		333ACEC010378F9968BD406F /* CounterPage */ = {
+			isa = PBXGroup;
+			children = (
+				333AC5CC3439E77D0C1BB1E6 /* CounterPageController.swift */,
+				333AC6B52768C2F0A44FD3E1 /* CounterPageView.swift */,
+			);
+			path = CounterPage;
 			sourceTree = "<group>";
 		};
 		F6BA94B1BB536737D261DA03 /* Pods */ = {
@@ -247,7 +275,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftAPI/SwiftAPI.framework",
 			);
@@ -258,7 +286,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -279,6 +307,10 @@
 				333AC40E1972AB0A507A063F /* todo-sequences.swift in Sources */,
 				333AC269009CA39DF05F4BC2 /* controller.swift in Sources */,
 				333AC426FE6F8BA16CF148CC /* state.swift in Sources */,
+				333AC715DA54F611F1059C04 /* CounterPageController.swift in Sources */,
+				333AC8A4242D2D6DA83B86D9 /* CounterPageView.swift in Sources */,
+				333ACD9EFF5FC88CF0CEDE76 /* TodoPageView.swift in Sources */,
+				333ACC8D4DEAB6C87E6CC59C /* TodoPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
