@@ -7,26 +7,39 @@ class Tab: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        controller().navigationcontroller = UINavigationController(rootViewController: self)
+
         let iconList = UIImage.ionicon(with: .iosList, textColor: UIColor.orange, size: CGSize(width: 18, height: 18))
         let stopWatch = UIImage.ionicon(with: .iosStopwatch, textColor: UIColor.orange, size: CGSize(width: 18, height: 18))
 
         let firstViewController = TodoPageController()
         firstViewController.tabBarItem = UITabBarItem(title: "Todo", image: iconList, tag: 1)
-        firstViewController.view.backgroundColor = UIColor.orange
         firstViewController.title = "Todo"
 
         let secondViewController = CounterPageController()
         secondViewController.tabBarItem = UITabBarItem(title: "Counter", image: stopWatch, tag: 0)
-        secondViewController.view.backgroundColor = UIColor.orange
         secondViewController.title = "Counter"
 
-        let tabBarList = [secondViewController, firstViewController]
-
-        controller().window.rootViewController = UINavigationController(rootViewController: self)
+        self.viewControllers = [secondViewController, firstViewController]
+//
+        controller().window.rootViewController = controller().navigationcontroller
         controller().window.makeKeyAndVisible()
 
-        self.viewControllers = tabBarList
-        self.navigationController?.isNavigationBarHidden = true;
+        self.navigationController?.view.backgroundColor = UIColor(red:247, green:247, blue:247, alpha:1)
+        self.navigationController?.isNavigationBarHidden = false;
+
+    }
+
+
+
+
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setNeedsStatusBarAppearanceUpdate()
+    }
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
     }
 }
 
@@ -39,5 +52,17 @@ extension UIViewController {
 
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+extension UINavigationController {
+    open override var preferredStatusBarStyle: UIStatusBarStyle {
+        if let topViewController = presentedViewController{
+            return topViewController.preferredStatusBarStyle
+        }
+        if let topViewController = viewControllers.last {
+            return topViewController.preferredStatusBarStyle
+        }
+
+        return .default
     }
 }

@@ -7,9 +7,8 @@ class Controller {
     var socket: WebSocket!
     var tabbar: Tab!
     var window: UIWindow!
-
-//    var views: ViewController!
-
+    var navigationbar: UINavigationBar!
+    var navigationcontroller: UINavigationController!
 
     init() {
         self.state = State.init()

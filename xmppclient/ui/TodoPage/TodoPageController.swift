@@ -18,13 +18,6 @@ class TodoPageController: UIViewController, UITableViewDataSource, UITableViewDe
         todosObservation = controller().state.todos.observe(\.todos, options: [.initial]) { (model, change) in
             self.todos = model.todos
             self.tableView.reloadData()
-
-            // scroll to bottom
-            self.tableView.layoutIfNeeded()
-            self.tableView.setContentOffset(CGPoint(
-                    x: 0,
-                    y: self.tableView.contentSize.height - self.tableView.frame.height),
-                    animated: false)
         }
     }
 
