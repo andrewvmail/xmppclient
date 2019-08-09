@@ -5,6 +5,8 @@ import Starscream
 class Controller {
     var state: State!
     var socket: WebSocket!
+    var tabbar: Tab!
+    var window: UIWindow!
 
 //    var views: ViewController!
 

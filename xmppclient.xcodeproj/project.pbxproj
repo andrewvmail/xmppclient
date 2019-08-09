@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		333AC0F9B7B06B6812F46C73 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACAB13FBE608FBF733A29 /* TabBarController.swift */; };
+		333AC0F9B7B06B6812F46C73 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACAB13FBE608FBF733A29 /* Tab.swift */; };
 		333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333ACBAFC13D1DB26A420F94 /* Assets.xcassets */; };
 		333AC269009CA39DF05F4BC2 /* controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACCD997E3FBCEDA78BEAA /* controller.swift */; };
 		333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC726BA06BE5F6D23E88C /* AppDelegate.swift */; };
@@ -25,7 +25,6 @@
 		333ACD9EFF5FC88CF0CEDE76 /* TodoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC504A342CF5E9EBBCACB /* TodoPageView.swift */; };
 		333ACDBBC9BA8577788E9754 /* counter-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC6389290D0E9A4FED95D /* counter-actions.swift */; };
 		42469CF4E4DEF0A8FAC4AF83 /* Pods_xmppclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */; };
-		ABC359BCC108FF1B46A20EEA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC35A167F984100974252C4 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +40,7 @@
 		333AC7FDEF70EBFCFFBF3B25 /* todo-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "todo-sequences.swift"; sourceTree = "<group>"; };
 		333AC94C6D059EF0E84CA105 /* counter-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-sequences.swift"; sourceTree = "<group>"; };
 		333ACA0A0C501FA2DCFC5C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		333ACAB13FBE608FBF733A29 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		333ACAB13FBE608FBF733A29 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		333ACBAFC13D1DB26A420F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333ACC5DC6C2CF3EA1B99926 /* TodoPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPageController.swift; sourceTree = "<group>"; };
 		333ACC9F7F704EB13EADCA0A /* xmppclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +49,6 @@
 		333ACFAEEA1068E22AFF4F19 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
-		ABC35A167F984100974252C4 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmppclient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,10 +108,9 @@
 		333AC7209A5B1F6E6074353D /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				ABC35A167F984100974252C4 /* Main.swift */,
 				333ACEC010378F9968BD406F /* CounterPage */,
 				333AC1DD9145B552CF1B9637 /* TodoPage */,
-				333ACAB13FBE608FBF733A29 /* TabBarController.swift */,
+				333ACAB13FBE608FBF733A29 /* Tab.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -294,7 +291,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */,
-				ABC359BCC108FF1B46A20EEA /* Main.swift in Sources */,
 				333ACC1E7E8DA3EFA67B2D24 /* counter-sequences.swift in Sources */,
 				333ACDBBC9BA8577788E9754 /* counter-actions.swift in Sources */,
 				333ACCD60A033D1107934CBA /* counter-state.swift in Sources */,
@@ -308,7 +304,7 @@
 				333AC8A4242D2D6DA83B86D9 /* CounterPageView.swift in Sources */,
 				333ACD9EFF5FC88CF0CEDE76 /* TodoPageView.swift in Sources */,
 				333ACC8D4DEAB6C87E6CC59C /* TodoPageController.swift in Sources */,
-				333AC0F9B7B06B6812F46C73 /* TabBarController.swift in Sources */,
+				333AC0F9B7B06B6812F46C73 /* Tab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
