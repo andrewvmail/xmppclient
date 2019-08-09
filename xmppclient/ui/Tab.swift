@@ -21,13 +21,12 @@ class Tab: UITabBarController {
         secondViewController.title = "Counter"
 
         self.viewControllers = [secondViewController, firstViewController]
-//
+        
         controller().window.rootViewController = controller().navigationcontroller
         controller().window.makeKeyAndVisible()
 
         self.navigationController?.view.backgroundColor = UIColor(red:247, green:247, blue:247, alpha:1)
         self.navigationController?.isNavigationBarHidden = false;
-
     }
 
 
@@ -39,7 +38,7 @@ class Tab: UITabBarController {
         self.setNeedsStatusBarAppearanceUpdate()
     }
     override var preferredStatusBarStyle : UIStatusBarStyle {
-        return .lightContent
+        return .default
     }
 }
 
