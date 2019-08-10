@@ -1,7 +1,10 @@
 import UIKit
 
 func TodoPageView(self: TodoPageController) {
-//    controller().navigationcontroller.navigationBar.topItem?.title = "Todo"
+    self.title =  "TODO!!!!"
+
+    let newBtn = UIBarButtonItem(title: "new", style: .plain, target: self, action: #selector(self.anotherMethod))
+    self.navigationItem.rightBarButtonItem = newBtn
 
     self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     self.tableView.frame = self.view.bounds
