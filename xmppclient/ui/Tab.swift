@@ -20,13 +20,17 @@ class Tab: UITabBarController {
         secondViewController.tabBarItem = UITabBarItem(title: "Counter", image: stopWatch, tag: 0)
         secondViewController.title = "Counter"
 
-        self.viewControllers = [secondViewController, firstViewController]
-        
+        let viewControllersList = [secondViewController, firstViewController]
+        self.viewControllers = viewControllersList.map { UINavigationController(rootViewController: $0) }
         controller().window.rootViewController = controller().navigationcontroller
+//        controller().window.rootViewController = self.viewControllers;
         controller().window.makeKeyAndVisible()
 
         self.navigationController?.view.backgroundColor = UIColor(red:247, green:247, blue:247, alpha:1)
-        self.navigationController?.isNavigationBarHidden = false;
+        self.navigationController?.isNavigationBarHidden = true;
+//        controller().navigationcontroller.navigationBar.topItem?.title = "MOMO"
+        controller().navigationcontroller.navigationItem.largeTitleDisplayMode = .automatic
+
     }
 
 

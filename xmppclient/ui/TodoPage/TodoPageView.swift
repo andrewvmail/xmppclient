@@ -1,6 +1,8 @@
 import UIKit
 
 func TodoPageView(self: TodoPageController) {
+//    controller().navigationcontroller.navigationBar.topItem?.title = "Todo"
+
     self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     self.tableView.frame = self.view.bounds
     self.tableView.center.x = self.view.center.x

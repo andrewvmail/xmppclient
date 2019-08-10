@@ -1,6 +1,9 @@
 import UIKit
 
 func CounterPageView(self: CounterPageController) {
+//    controller().navigationcontroller.navigationBar.topItem?.title = "Counter"
+
+
     self.count.frame = CGRect(x: 50, y: 50, width: 100, height: 30)
     self.count.text = "Count"
     self.count.center.x = self.view.center.x
