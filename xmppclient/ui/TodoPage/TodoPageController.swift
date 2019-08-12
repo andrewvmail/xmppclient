@@ -46,10 +46,7 @@ class TodoPageController: UIViewController, UITableViewDataSource, UITableViewDe
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
-            print("delete")
-            run(sequence: removeTodoSequence, name: "removeTodoSequence", props: 0)
-
-            // handle delete (by removing the data from your array and updating the tableview)
+            run(sequence: removeTodoSequence, name: "removeTodoSequence", props: forRowAt)
         }
     }
 }
