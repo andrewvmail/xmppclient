@@ -5,8 +5,9 @@ func changeNewTodoTitleSequence() {
 //= set(state.newTodoTitle, props.title)
 }
 
-func removeTodoSequence() {
+func removeTodoSequence(props: Int) {
 //    = unset(state.todos[props.uid])
+    deleteTodo(props: props)
 }
 
 func toggleAllCheckedSequence() {

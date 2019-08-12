@@ -29,3 +29,7 @@ func clearCompletedTodos() {
 //        }
 //    })
 }
+
+func deleteTodo(props: Int) {
+    controller().state.todos.todos.remove(at: props)
+}

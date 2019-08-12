@@ -28,3 +28,9 @@ func run(sequence: (String) -> (), name: String, props: String = "") {
     controller().socket.write(string: message)
     sequence(props)
 }
+func run(sequence: (Int) -> (), name: String, props: Int?) {
+    let message: String = String(Int.random(in: 0 ..< 10)) + "# sequence: " + name + " -> props: " + String(props!)
+    controller().socket.write(string: " ")
+    controller().socket.write(string: message)
+    sequence(props!)
+}

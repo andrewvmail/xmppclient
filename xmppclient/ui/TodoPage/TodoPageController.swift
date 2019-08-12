@@ -6,7 +6,6 @@ class TodoPageController: UIViewController, UITableViewDataSource, UITableViewDe
     var todosObservation: NSKeyValueObservation?
     @IBOutlet var textLabel: UILabel?
     @IBOutlet var tableView: UITableView! = UITableView()
-    @IBOutlet weak var todoInput: UITextField!
 
     @IBAction func addToDo(_ sender: UIButton) {
         let alert = UIAlertController(title: "Some Title", message: "Enter a text", preferredStyle: .alert)
@@ -39,6 +38,19 @@ class TodoPageController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
         cell.textLabel?.text = todos[indexPath.row]
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            print("delete")
+            run(sequence: removeTodoSequence, name: "removeTodoSequence", props: 0)
+
+            // handle delete (by removing the data from your array and updating the tableview)
+        }
     }
 }
 
