@@ -12,8 +12,13 @@ func run(action: () -> (), name: String) {
 }
 func run(action: (String) -> (), name: String, props: String) {
     controller().socket.write(string: "--- action: " + name)
-    controller().socket.write(string: "--- action: " + controller().state.debugDescription)
+    let jsonData = try! JSONEncoder().encode(controller().state)
+    let jsonString = String(data: jsonData, encoding: .utf8)!
+    controller().socket.write(string: jsonString)
 
+
+
+//    controller().socket.write(string: "--- action: " + controller().state)
     action(props)
 }
 
