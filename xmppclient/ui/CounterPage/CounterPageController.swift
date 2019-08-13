@@ -16,8 +16,8 @@ class CounterPageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         CounterPageView(self: self)
-        counterObservation = controller().state!.counter.observe(\.count, options: [.initial]) { (model, change) in
-            self.count.text = "\(model.count)"
+        counterObservation = controller().state!.counter.observe(\.count, options: [.initial]) { [weak self] (model, change) in
+            self?.count.text = "\(model.count)"
         }
     }
 }

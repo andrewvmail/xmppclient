@@ -11,7 +11,7 @@ class Controller {
     var navigationcontroller: UINavigationController!
 
     init() {
-        self.state = State.init()
+        self.state = State()
         #if DEBUG
         connectToDebuger()
         #endif

@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 func controller() -> Controller {
@@ -8,10 +7,13 @@ func controller() -> Controller {
 
 func run(action: () -> (), name: String) {
     controller().socket.write(string: "--- action: " + name)
+//    controller().socket.write(string: "--- action: " + controller().state.description)
     action()
 }
 func run(action: (String) -> (), name: String, props: String) {
     controller().socket.write(string: "--- action: " + name)
+    controller().socket.write(string: "--- action: " + controller().state.debugDescription)
+
     action(props)
 }
 

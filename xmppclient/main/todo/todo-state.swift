@@ -6,5 +6,8 @@ import Foundation
 //}
 
 class TodoState: NSObject {
-    @objc dynamic var todos: [String] = ["Computers", "Photography", "Cars", "Reading", "Learning New Things"]
+    @objc dynamic var todos: [String] = []
+}
+extension TodoState: Encodable {
+    
 }

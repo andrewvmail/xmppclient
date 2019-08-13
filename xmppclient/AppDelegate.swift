@@ -4,7 +4,7 @@ import Foundation
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var controller: Controller = Controller.init()
+    let controller = Controller()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         controller.window = UIWindow(frame: UIScreen.main.bounds)
