@@ -8,6 +8,9 @@ websocat -t ws-l:127.0.0.1:8080 broadcast:mirror:
 # using chrome
 var webSocket = new WebSocket('ws://localhost:8080');
 webSocket.onmessage = ({data}) => console.log(data);
+
+# alternative
+https://github.com/tableau/tableau-log-viewer
 ```
 
 ```
