@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		333AC0F9B7B06B6812F46C73 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACAB13FBE608FBF733A29 /* Tab.swift */; };
+		333AC19C5EAF5B731CBDDD2A /* WelcomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC481FC17538124F2BDB1 /* WelcomePageController.swift */; };
 		333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333ACBAFC13D1DB26A420F94 /* Assets.xcassets */; };
 		333AC269009CA39DF05F4BC2 /* controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACCD997E3FBCEDA78BEAA /* controller.swift */; };
+		333AC2F66BE8391FDEB83CF0 /* app-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC6AEF0FFB50AEF546415 /* app-sequences.swift */; };
+		333AC38CFA6AF5D1D5C5D194 /* WelcomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC09DDABD4345CF49FE60 /* WelcomePageView.swift */; };
 		333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC726BA06BE5F6D23E88C /* AppDelegate.swift */; };
 		333AC40E1972AB0A507A063F /* todo-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC7FDEF70EBFCFFBF3B25 /* todo-sequences.swift */; };
 		333AC426FE6F8BA16CF148CC /* state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC0347D0933A02E221609 /* state.swift */; };
 		333AC5419BE6ED61C3CCFAEF /* todo-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC53B674FBCE61232C89B /* todo-actions.swift */; };
+		333AC6C13C90421297B9B15A /* app-state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACEB3CEC2FCE224C73F75 /* app-state.swift */; };
 		333AC715DA54F611F1059C04 /* CounterPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC5CC3439E77D0C1BB1E6 /* CounterPageController.swift */; };
+		333AC7C78A78381BB78BC12E /* app-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC860DD20E145853EDB76 /* app-actions.swift */; };
 		333AC7CB572D9EA8A687ABAA /* libs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACE9DAE3679202D4BDA6C /* libs.swift */; };
 		333AC8A4242D2D6DA83B86D9 /* CounterPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC6B52768C2F0A44FD3E1 /* CounterPageView.swift */; };
 		333AC8F98529D7F3E5096381 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 333ACFAEEA1068E22AFF4F19 /* README.md */; };
@@ -30,14 +35,18 @@
 /* Begin PBXFileReference section */
 		333AC0347D0933A02E221609 /* state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = state.swift; sourceTree = "<group>"; };
 		333AC03FB9DB6436CCB15FA1 /* counter-state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-state.swift"; sourceTree = "<group>"; };
+		333AC09DDABD4345CF49FE60 /* WelcomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePageView.swift; sourceTree = "<group>"; };
 		333AC3890BD27E2F478A6BE4 /* todo-state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "todo-state.swift"; sourceTree = "<group>"; };
+		333AC481FC17538124F2BDB1 /* WelcomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePageController.swift; sourceTree = "<group>"; };
 		333AC504A342CF5E9EBBCACB /* TodoPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPageView.swift; sourceTree = "<group>"; };
 		333AC53B674FBCE61232C89B /* todo-actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "todo-actions.swift"; sourceTree = "<group>"; };
 		333AC5CC3439E77D0C1BB1E6 /* CounterPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterPageController.swift; sourceTree = "<group>"; };
 		333AC6389290D0E9A4FED95D /* counter-actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-actions.swift"; sourceTree = "<group>"; };
+		333AC6AEF0FFB50AEF546415 /* app-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "app-sequences.swift"; sourceTree = "<group>"; };
 		333AC6B52768C2F0A44FD3E1 /* CounterPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterPageView.swift; sourceTree = "<group>"; };
 		333AC726BA06BE5F6D23E88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		333AC7FDEF70EBFCFFBF3B25 /* todo-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "todo-sequences.swift"; sourceTree = "<group>"; };
+		333AC860DD20E145853EDB76 /* app-actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "app-actions.swift"; sourceTree = "<group>"; };
 		333AC94C6D059EF0E84CA105 /* counter-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-sequences.swift"; sourceTree = "<group>"; };
 		333ACA0A0C501FA2DCFC5C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		333ACAB13FBE608FBF733A29 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -46,6 +55,7 @@
 		333ACC9F7F704EB13EADCA0A /* xmppclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		333ACCD997E3FBCEDA78BEAA /* controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controller.swift; sourceTree = "<group>"; };
 		333ACE9DAE3679202D4BDA6C /* libs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libs.swift; sourceTree = "<group>"; };
+		333ACEB3CEC2FCE224C73F75 /* app-state.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "app-state.swift"; sourceTree = "<group>"; };
 		333ACFAEEA1068E22AFF4F19 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,8 +85,7 @@
 		333AC16B97E456E9EF35AA3F /* main */ = {
 			isa = PBXGroup;
 			children = (
-				FAAA4A2422F64BEB002420D4 /* counter */,
-				FAAA4A2322F64BDF002420D4 /* todo */,
+				FA58922B2303DAE300FE11FC /* modules */,
 				333ACE9DAE3679202D4BDA6C /* libs.swift */,
 				333ACCD997E3FBCEDA78BEAA /* controller.swift */,
 				333AC0347D0933A02E221609 /* state.swift */,
@@ -108,8 +117,8 @@
 		333AC7209A5B1F6E6074353D /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				333ACEC010378F9968BD406F /* CounterPage */,
-				333AC1DD9145B552CF1B9637 /* TodoPage */,
+				FA5892292303D7A100FE11FC /* registration */,
+				FA5892282303D78C00FE11FC /* kitchensink */,
 				333ACAB13FBE608FBF733A29 /* Tab.swift */,
 			);
 			path = ui;
@@ -150,6 +159,60 @@
 				8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA5892282303D78C00FE11FC /* kitchensink */ = {
+			isa = PBXGroup;
+			children = (
+				333ACEC010378F9968BD406F /* CounterPage */,
+				333AC1DD9145B552CF1B9637 /* TodoPage */,
+			);
+			path = kitchensink;
+			sourceTree = "<group>";
+		};
+		FA5892292303D7A100FE11FC /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				FA58922A2303D7B600FE11FC /* WelcomePage */,
+			);
+			path = registration;
+			sourceTree = "<group>";
+		};
+		FA58922A2303D7B600FE11FC /* WelcomePage */ = {
+			isa = PBXGroup;
+			children = (
+				333AC481FC17538124F2BDB1 /* WelcomePageController.swift */,
+				333AC09DDABD4345CF49FE60 /* WelcomePageView.swift */,
+			);
+			path = WelcomePage;
+			sourceTree = "<group>";
+		};
+		FA58922B2303DAE300FE11FC /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				FA58922D2303DAF300FE11FC /* app */,
+				FA58922C2303DAEB00FE11FC /* kitchensink */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		FA58922C2303DAEB00FE11FC /* kitchensink */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA4A2422F64BEB002420D4 /* counter */,
+				FAAA4A2322F64BDF002420D4 /* todo */,
+			);
+			path = kitchensink;
+			sourceTree = "<group>";
+		};
+		FA58922D2303DAF300FE11FC /* app */ = {
+			isa = PBXGroup;
+			children = (
+				333ACEB3CEC2FCE224C73F75 /* app-state.swift */,
+				333AC6AEF0FFB50AEF546415 /* app-sequences.swift */,
+				333AC860DD20E145853EDB76 /* app-actions.swift */,
+			);
+			path = app;
 			sourceTree = "<group>";
 		};
 		FAAA4A2322F64BDF002420D4 /* todo */ = {
@@ -267,20 +330,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IoniconsKit/IoniconsKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftAPI/SwiftAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/ZKCarousel/ZKCarousel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IoniconsKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZKCarousel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -305,6 +370,11 @@
 				333ACD9EFF5FC88CF0CEDE76 /* TodoPageView.swift in Sources */,
 				333ACC8D4DEAB6C87E6CC59C /* TodoPageController.swift in Sources */,
 				333AC0F9B7B06B6812F46C73 /* Tab.swift in Sources */,
+				333AC19C5EAF5B731CBDDD2A /* WelcomePageController.swift in Sources */,
+				333AC38CFA6AF5D1D5C5D194 /* WelcomePageView.swift in Sources */,
+				333AC6C13C90421297B9B15A /* app-state.swift in Sources */,
+				333AC2F66BE8391FDEB83CF0 /* app-sequences.swift in Sources */,
+				333AC7C78A78381BB78BC12E /* app-actions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

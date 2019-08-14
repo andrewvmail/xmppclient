@@ -5,4 +5,5 @@ target 'xmppclient' do
   pod 'SwiftAPI'
   pod 'Starscream', '~> 3.0.2'
   pod "IoniconsKit"
+  pod 'ZKCarousel'
 end

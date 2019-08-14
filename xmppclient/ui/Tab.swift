@@ -22,14 +22,19 @@ class Tab: UITabBarController {
 
         let viewControllersList = [secondViewController, firstViewController]
         self.viewControllers = viewControllersList.map { UINavigationController(rootViewController: $0) }
-        controller().window.rootViewController = controller().navigationcontroller
-//        controller().window.rootViewController = self.viewControllers;
+//        controller().window.rootViewController = controller().navigationcontroller
+
+//        controller().window.rootViewController = WelcomePageController();
+
         controller().window.makeKeyAndVisible()
 
         self.navigationController?.view.backgroundColor = UIColor(red:247, green:247, blue:247, alpha:1)
         self.navigationController?.isNavigationBarHidden = true;
 //        controller().navigationcontroller.navigationBar.topItem?.title = "MOMO"
         controller().navigationcontroller.navigationItem.largeTitleDisplayMode = .automatic
+
+        run(sequence: bootstrapSequence, name: "bootstrapSequence")
+
 
     }
 
