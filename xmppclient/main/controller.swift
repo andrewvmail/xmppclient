@@ -8,13 +8,26 @@ class Controller {
     var tabbar: Tab!
     var window: UIWindow!
     var navigationbar: UINavigationBar!
-    var navigationcontroller: UINavigationController!
+    var navigationcontroller = UINavigationController()
+    var navigation : UINavigationController!
+
 
     init() {
-        self.state = State()
+        state = State()
         #if DEBUG
         connectToDebuger()
         #endif
+    }
+
+    func afterInit() {
+        print("afterInit")
+        window?.rootViewController = navigationcontroller
+        navigation = window?.rootViewController as? UINavigationController
+        window?.makeKeyAndVisible()
+        navigation.view.backgroundColor = UIColor(red:247, green:247, blue:247, alpha:1)
+        navigation.isNavigationBarHidden = true;
+        navigation.navigationItem.largeTitleDisplayMode = .automatic
+        run(sequence: bootstrapSequence, name: "bootstrapSequence")
     }
 
     func connectToDebuger() {
@@ -36,3 +49,4 @@ class Controller {
         socket.write(string: "Hi Server!")
     }
 }
+

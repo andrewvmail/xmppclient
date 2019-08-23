@@ -7,7 +7,7 @@ class Tab: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        controller().navigationcontroller = UINavigationController(rootViewController: self)
+//        controller().navigationcontroller = UINavigationController(rootViewController: self)
 
         let iconList = UIImage.ionicon(with: .iosList, textColor: UIColor.orange, size: CGSize(width: 18, height: 18))
         let stopWatch = UIImage.ionicon(with: .iosStopwatch, textColor: UIColor.orange, size: CGSize(width: 18, height: 18))

@@ -6,3 +6,7 @@ func tokenExist() -> Bool {
     }
     return true
 }
+
+func nav(props: String) {
+
+}
