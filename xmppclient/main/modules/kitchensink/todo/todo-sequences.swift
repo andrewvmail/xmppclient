@@ -27,7 +27,7 @@ func changeFilterSequence() {
 }
 
 func submitNewTodoSequence(props: String?) {
-    run(action: addTodo, name: "addTodo", props: props!)
+    // run(action: addTodo, name: "addTodo", props: props!)
 }
 
 //    when(state.newTodoTitle),

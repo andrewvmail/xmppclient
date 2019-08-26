@@ -5,11 +5,12 @@ import Starscream
 class Controller {
     var state: State!
     var socket: WebSocket!
-    var tabbar: Tab!
     var window: UIWindow!
     var navigationbar: UINavigationBar!
     var navigationcontroller = UINavigationController()
     var navigation : UINavigationController!
+    let db = Database()
+    let http = Http()
 
 
     init() {

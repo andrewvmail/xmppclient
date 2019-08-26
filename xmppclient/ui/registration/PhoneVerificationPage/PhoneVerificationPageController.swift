@@ -21,6 +21,23 @@ class PhoneVerificationPageController: UIViewController {
         run(sequence: decrement, name: "decrement")
     }
 
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        //Write button action here
+        print("verify button pressed")
+        run(
+                sequence: registration().verifyPhone,
+                name: "registration.verifyPhone"
+        )
+    }
+
+    @objc func onPhoneInput(_ textField: UITextField) {
+        print(textField.text)
+        run(sequence: registration().onPhoneInput,
+                name: "registration.onPhoneInput",
+                props: textField.text!)
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         PhoneVerificationView(self: self)

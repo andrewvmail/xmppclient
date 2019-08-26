@@ -17,3 +17,5 @@ Pods/
 # Additions
 .idea/
 .DS_Store
+GoogleService-Info.plist
+

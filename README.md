@@ -24,4 +24,6 @@ open https://andrewvmail.github.io/react-json-inspector/
 - [ ] persistence across restarts
 - [ ] connect to an ejabberd server
 - [ ] try swiftui
- 
+
+- [ ] urltype
+- [ ] plist 

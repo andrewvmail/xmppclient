@@ -7,4 +7,8 @@ target 'xmppclient' do
   pod "IoniconsKit"
   pod 'ZKCarousel'
   pod 'paper-onboarding'
+  pod 'SQLite.swift', '~> 0.12.0'
+  pod 'Alamofire', '~> 5.0.0-beta.5'
+  pod 'Firebase/Auth'
+  pod 'SwiftyJSON'
 end
