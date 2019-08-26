@@ -32,6 +32,14 @@
 		333ACDBBC9BA8577788E9754 /* counter-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC6389290D0E9A4FED95D /* counter-actions.swift */; };
 		42469CF4E4DEF0A8FAC4AF83 /* Pods_xmppclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */; };
 		FA07F968231462C000BB3A67 /* TabbedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F967231462C000BB3A67 /* TabbedPage.swift */; };
+		FA07F96C2314633300BB3A67 /* registration-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F96A2314633200BB3A67 /* registration-sequences.swift */; };
+		FA07F96D2314633300BB3A67 /* registration-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F96B2314633200BB3A67 /* registration-actions.swift */; };
+		FA07F96F2314639B00BB3A67 /* SmsVerificationPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F96E2314639A00BB3A67 /* SmsVerificationPage.swift */; };
+		FA07F973231463D100BB3A67 /* http.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F971231463D100BB3A67 /* http.swift */; };
+		FA07F974231463D100BB3A67 /* db.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F972231463D100BB3A67 /* db.swift */; };
+		FA07F976231463FA00BB3A67 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F975231463FA00BB3A67 /* config.swift */; };
+		FA07F9792314642E00BB3A67 /* profile-store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F9782314642E00BB3A67 /* profile-store.swift */; };
+		FA07F97B231464AE00BB3A67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA07F97A231464AD00BB3A67 /* GoogleService-Info.plist */; };
 		FA5892352304616700FE11FC /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5892312304616700FE11FC /* Nunito-Light.ttf */; };
 		FA5892362304616700FE11FC /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5892322304616700FE11FC /* Nunito-Regular.ttf */; };
 		FA5892372304616700FE11FC /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5892332304616700FE11FC /* Nunito-Bold.ttf */; };
@@ -68,6 +76,14 @@
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
 		EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmppclient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA07F967231462C000BB3A67 /* TabbedPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedPage.swift; sourceTree = "<group>"; };
+		FA07F96A2314633200BB3A67 /* registration-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "registration-sequences.swift"; sourceTree = "<group>"; };
+		FA07F96B2314633200BB3A67 /* registration-actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "registration-actions.swift"; sourceTree = "<group>"; };
+		FA07F96E2314639A00BB3A67 /* SmsVerificationPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsVerificationPage.swift; sourceTree = "<group>"; };
+		FA07F971231463D100BB3A67 /* http.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = http.swift; sourceTree = "<group>"; };
+		FA07F972231463D100BB3A67 /* db.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = db.swift; sourceTree = "<group>"; };
+		FA07F975231463FA00BB3A67 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		FA07F9782314642E00BB3A67 /* profile-store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "profile-store.swift"; sourceTree = "<group>"; };
+		FA07F97A231464AD00BB3A67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA5892312304616700FE11FC /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		FA5892322304616700FE11FC /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		FA5892332304616700FE11FC /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
@@ -97,6 +113,7 @@
 		333AC16B97E456E9EF35AA3F /* main */ = {
 			isa = PBXGroup;
 			children = (
+				FA07F970231463D100BB3A67 /* providers */,
 				FA58922B2303DAE300FE11FC /* modules */,
 				333ACE9DAE3679202D4BDA6C /* libs.swift */,
 				333ACCD997E3FBCEDA78BEAA /* controller.swift */,
@@ -117,6 +134,7 @@
 		333AC1E3B800F815829F4856 /* xmppclient */ = {
 			isa = PBXGroup;
 			children = (
+				FA07F975231463FA00BB3A67 /* config.swift */,
 				FA5892302304616700FE11FC /* fonts */,
 				333ACA0A0C501FA2DCFC5C6D /* Info.plist */,
 				333ACBAFC13D1DB26A420F94 /* Assets.xcassets */,
@@ -148,6 +166,7 @@
 		333ACBD697C1A2288BB44A2F = {
 			isa = PBXGroup;
 			children = (
+				FA07F97A231464AD00BB3A67 /* GoogleService-Info.plist */,
 				333ACB9DF471A1537041EDF0 /* Products */,
 				333AC1E3B800F815829F4856 /* xmppclient */,
 				226AD1E02D4632C26F08882A /* Frameworks */,
@@ -182,6 +201,32 @@
 			path = app;
 			sourceTree = "<group>";
 		};
+		FA07F9692314633200BB3A67 /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				FA07F96A2314633200BB3A67 /* registration-sequences.swift */,
+				FA07F96B2314633200BB3A67 /* registration-actions.swift */,
+			);
+			path = registration;
+			sourceTree = "<group>";
+		};
+		FA07F970231463D100BB3A67 /* providers */ = {
+			isa = PBXGroup;
+			children = (
+				FA07F971231463D100BB3A67 /* http.swift */,
+				FA07F972231463D100BB3A67 /* db.swift */,
+			);
+			path = providers;
+			sourceTree = "<group>";
+		};
+		FA07F9772314642E00BB3A67 /* profile-module */ = {
+			isa = PBXGroup;
+			children = (
+				FA07F9782314642E00BB3A67 /* profile-store.swift */,
+			);
+			path = "profile-module";
+			sourceTree = "<group>";
+		};
 		FA5892282303D78C00FE11FC /* kitchensink */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +239,7 @@
 		FA5892292303D7A100FE11FC /* registration */ = {
 			isa = PBXGroup;
 			children = (
+				FA07F96E2314639A00BB3A67 /* SmsVerificationPage.swift */,
 				FAD1FE172305274D00EB5B37 /* PhoneVerificationPage */,
 				FA58922A2303D7B600FE11FC /* WelcomePage */,
 			);
@@ -212,6 +258,7 @@
 		FA58922B2303DAE300FE11FC /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				FA07F9772314642E00BB3A67 /* profile-module */,
 				FA58922D2303DAF300FE11FC /* app */,
 				FA58922C2303DAEB00FE11FC /* kitchensink */,
 			);
@@ -230,6 +277,7 @@
 		FA58922D2303DAF300FE11FC /* app */ = {
 			isa = PBXGroup;
 			children = (
+				FA07F9692314633200BB3A67 /* registration */,
 				333ACEB3CEC2FCE224C73F75 /* app-state.swift */,
 				333AC6AEF0FFB50AEF546415 /* app-sequences.swift */,
 				333AC860DD20E145853EDB76 /* app-actions.swift */,
@@ -344,6 +392,7 @@
 				FA5892362304616700FE11FC /* Nunito-Regular.ttf in Resources */,
 				FA5892382304616700FE11FC /* OpenSans-Regular.ttf in Resources */,
 				FA5892352304616700FE11FC /* Nunito-Light.ttf in Resources */,
+				FA07F97B231464AE00BB3A67 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,25 +455,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */,
+				FA07F973231463D100BB3A67 /* http.swift in Sources */,
 				333ACC1E7E8DA3EFA67B2D24 /* counter-sequences.swift in Sources */,
 				333ACDBBC9BA8577788E9754 /* counter-actions.swift in Sources */,
 				333ACCD60A033D1107934CBA /* counter-state.swift in Sources */,
 				333AC93A5A6DA5EA8554A0B4 /* todo-state.swift in Sources */,
 				333AC7CB572D9EA8A687ABAA /* libs.swift in Sources */,
+				FA07F96D2314633300BB3A67 /* registration-actions.swift in Sources */,
 				333AC5419BE6ED61C3CCFAEF /* todo-actions.swift in Sources */,
 				333AC40E1972AB0A507A063F /* todo-sequences.swift in Sources */,
 				333AC269009CA39DF05F4BC2 /* controller.swift in Sources */,
 				333AC426FE6F8BA16CF148CC /* state.swift in Sources */,
+				FA07F96C2314633300BB3A67 /* registration-sequences.swift in Sources */,
 				333AC715DA54F611F1059C04 /* CounterPageController.swift in Sources */,
+				FA07F96F2314639B00BB3A67 /* SmsVerificationPage.swift in Sources */,
 				333AC8A4242D2D6DA83B86D9 /* CounterPageView.swift in Sources */,
 				333ACD9EFF5FC88CF0CEDE76 /* TodoPageView.swift in Sources */,
+				FA07F9792314642E00BB3A67 /* profile-store.swift in Sources */,
 				333ACC8D4DEAB6C87E6CC59C /* TodoPageController.swift in Sources */,
 				333AC19C5EAF5B731CBDDD2A /* WelcomePageController.swift in Sources */,
 				333AC38CFA6AF5D1D5C5D194 /* WelcomePageView.swift in Sources */,
 				333AC6C13C90421297B9B15A /* app-state.swift in Sources */,
 				333AC2F66BE8391FDEB83CF0 /* app-sequences.swift in Sources */,
+				FA07F974231463D100BB3A67 /* db.swift in Sources */,
 				333AC7C78A78381BB78BC12E /* app-actions.swift in Sources */,
 				333ACB9F4E8BD30BD1C9266C /* PhoneVerificationPageController.swift in Sources */,
+				FA07F976231463FA00BB3A67 /* config.swift in Sources */,
 				FA07F968231462C000BB3A67 /* TabbedPage.swift in Sources */,
 				333AC685744B58D0323553FC /* PhoneVerificationView.swift in Sources */,
 			);
