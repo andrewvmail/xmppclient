@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		333AC0F9B7B06B6812F46C73 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACAB13FBE608FBF733A29 /* Tab.swift */; };
 		333AC19C5EAF5B731CBDDD2A /* WelcomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC481FC17538124F2BDB1 /* WelcomePageController.swift */; };
 		333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333ACBAFC13D1DB26A420F94 /* Assets.xcassets */; };
 		333AC269009CA39DF05F4BC2 /* controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACCD997E3FBCEDA78BEAA /* controller.swift */; };
@@ -32,6 +31,7 @@
 		333ACD9EFF5FC88CF0CEDE76 /* TodoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC504A342CF5E9EBBCACB /* TodoPageView.swift */; };
 		333ACDBBC9BA8577788E9754 /* counter-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC6389290D0E9A4FED95D /* counter-actions.swift */; };
 		42469CF4E4DEF0A8FAC4AF83 /* Pods_xmppclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */; };
+		FA07F968231462C000BB3A67 /* TabbedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F967231462C000BB3A67 /* TabbedPage.swift */; };
 		FA5892352304616700FE11FC /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5892312304616700FE11FC /* Nunito-Light.ttf */; };
 		FA5892362304616700FE11FC /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5892322304616700FE11FC /* Nunito-Regular.ttf */; };
 		FA5892372304616700FE11FC /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5892332304616700FE11FC /* Nunito-Bold.ttf */; };
@@ -55,7 +55,6 @@
 		333AC860DD20E145853EDB76 /* app-actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "app-actions.swift"; sourceTree = "<group>"; };
 		333AC94C6D059EF0E84CA105 /* counter-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-sequences.swift"; sourceTree = "<group>"; };
 		333ACA0A0C501FA2DCFC5C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		333ACAB13FBE608FBF733A29 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		333ACBAFC13D1DB26A420F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333ACC5DC6C2CF3EA1B99926 /* TodoPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPageController.swift; sourceTree = "<group>"; };
 		333ACC9F7F704EB13EADCA0A /* xmppclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +67,7 @@
 		8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
 		EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmppclient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA07F967231462C000BB3A67 /* TabbedPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbedPage.swift; sourceTree = "<group>"; };
 		FA5892312304616700FE11FC /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		FA5892322304616700FE11FC /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		FA5892332304616700FE11FC /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
@@ -130,9 +130,9 @@
 		333AC7209A5B1F6E6074353D /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				FA07F966231462C000BB3A67 /* app */,
 				FA5892292303D7A100FE11FC /* registration */,
 				FA5892282303D78C00FE11FC /* kitchensink */,
-				333ACAB13FBE608FBF733A29 /* Tab.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -172,6 +172,14 @@
 				8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA07F966231462C000BB3A67 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				FA07F967231462C000BB3A67 /* TabbedPage.swift */,
+			);
+			path = app;
 			sourceTree = "<group>";
 		};
 		FA5892282303D78C00FE11FC /* kitchensink */ = {
@@ -411,13 +419,13 @@
 				333AC8A4242D2D6DA83B86D9 /* CounterPageView.swift in Sources */,
 				333ACD9EFF5FC88CF0CEDE76 /* TodoPageView.swift in Sources */,
 				333ACC8D4DEAB6C87E6CC59C /* TodoPageController.swift in Sources */,
-				333AC0F9B7B06B6812F46C73 /* Tab.swift in Sources */,
 				333AC19C5EAF5B731CBDDD2A /* WelcomePageController.swift in Sources */,
 				333AC38CFA6AF5D1D5C5D194 /* WelcomePageView.swift in Sources */,
 				333AC6C13C90421297B9B15A /* app-state.swift in Sources */,
 				333AC2F66BE8391FDEB83CF0 /* app-sequences.swift in Sources */,
 				333AC7C78A78381BB78BC12E /* app-actions.swift in Sources */,
 				333ACB9F4E8BD30BD1C9266C /* PhoneVerificationPageController.swift in Sources */,
+				FA07F968231462C000BB3A67 /* TabbedPage.swift in Sources */,
 				333AC685744B58D0323553FC /* PhoneVerificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
