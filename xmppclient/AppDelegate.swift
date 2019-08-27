@@ -14,7 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         controller.afterInit()
 
 
+
+        // let defaults = UserDefaults.standard
+        // defaults.set("Coding Explorer", forKey: "app.test")
+        //
+        // if let name = defaults.string(forKey: "app.test") {
+        //     print(name)
+        // }
+
         return true
+    }
+
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        UserDefaults.standard.synchronize()
     }
 }
 

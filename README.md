@@ -25,5 +25,6 @@ open https://andrewvmail.github.io/react-json-inspector/
 - [ ] connect to an ejabberd server
 - [ ] try swiftui
 
+Not in source 
 - [ ] urltype
 - [ ] plist 

@@ -1,6 +1,6 @@
 import Foundation
 
-final class State {
+class State : NSObject {
     var app = AppState()
     var counter = CounterState()
     var todos = TodoState()
@@ -14,3 +14,13 @@ extension State: Encodable {
         case profile
     }
 }
+
+protocol PropertyReflectable { }
+
+extension PropertyReflectable {
+    subscript(key: String) -> Any? {
+        let m = Mirror(reflecting: self)
+        return m.children.first { $0.label == key }?.value
+    }
+}
+extension State : PropertyReflectable {}

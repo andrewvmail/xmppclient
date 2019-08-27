@@ -10,3 +10,4 @@ class AppState: NSObject {
 
 extension AppState: Encodable {
 }
+extension AppState : PropertyReflectable {}
