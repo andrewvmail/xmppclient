@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333AC11CEE14C2B4E300968C /* counter-reactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACCD37D1F4100CD5F009D /* counter-reactions.swift */; };
 		333AC19C5EAF5B731CBDDD2A /* WelcomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC481FC17538124F2BDB1 /* WelcomePageController.swift */; };
 		333AC1AFA819AD911DB095CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333ACBAFC13D1DB26A420F94 /* Assets.xcassets */; };
 		333AC1E338086F8ED6AB9A7F /* app-reactions.swft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACAC989CBA2390EA2E0AE /* app-reactions.swft.swift */; };
 		333AC269009CA39DF05F4BC2 /* controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACCD997E3FBCEDA78BEAA /* controller.swift */; };
 		333AC2F66BE8391FDEB83CF0 /* app-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC6AEF0FFB50AEF546415 /* app-sequences.swift */; };
+		333AC38AA12339A2B60E71EB /* todo-reactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC71733D8D449406651DC /* todo-reactions.swift */; };
 		333AC38CFA6AF5D1D5C5D194 /* WelcomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC09DDABD4345CF49FE60 /* WelcomePageView.swift */; };
 		333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC726BA06BE5F6D23E88C /* AppDelegate.swift */; };
 		333AC40E1972AB0A507A063F /* todo-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC7FDEF70EBFCFFBF3B25 /* todo-sequences.swift */; };
@@ -27,6 +29,7 @@
 		333AC8F98529D7F3E5096381 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 333ACFAEEA1068E22AFF4F19 /* README.md */; };
 		333AC93A5A6DA5EA8554A0B4 /* todo-state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC3890BD27E2F478A6BE4 /* todo-state.swift */; };
 		333ACB9F4E8BD30BD1C9266C /* PhoneVerificationPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACD18E54F8CD632CDE1C7 /* PhoneVerificationPageController.swift */; };
+		333ACBAFB0DD63ABBAB9DF39 /* PhonePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACFEDC789F24AA3834B08 /* PhonePage.swift */; };
 		333ACC1E7E8DA3EFA67B2D24 /* counter-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC94C6D059EF0E84CA105 /* counter-sequences.swift */; };
 		333ACC8D4DEAB6C87E6CC59C /* TodoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333ACC5DC6C2CF3EA1B99926 /* TodoPageController.swift */; };
 		333ACCD60A033D1107934CBA /* counter-state.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC03FB9DB6436CCB15FA1 /* counter-state.swift */; };
@@ -60,6 +63,7 @@
 		333AC6389290D0E9A4FED95D /* counter-actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-actions.swift"; sourceTree = "<group>"; };
 		333AC6AEF0FFB50AEF546415 /* app-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "app-sequences.swift"; sourceTree = "<group>"; };
 		333AC6B52768C2F0A44FD3E1 /* CounterPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterPageView.swift; sourceTree = "<group>"; };
+		333AC71733D8D449406651DC /* todo-reactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "todo-reactions.swift"; sourceTree = "<group>"; };
 		333AC726BA06BE5F6D23E88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		333AC7FDEF70EBFCFFBF3B25 /* todo-sequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "todo-sequences.swift"; sourceTree = "<group>"; };
 		333AC860DD20E145853EDB76 /* app-actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "app-actions.swift"; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		333ACBAFC13D1DB26A420F94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333ACC5DC6C2CF3EA1B99926 /* TodoPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoPageController.swift; sourceTree = "<group>"; };
 		333ACC9F7F704EB13EADCA0A /* xmppclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmppclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		333ACCD37D1F4100CD5F009D /* counter-reactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "counter-reactions.swift"; sourceTree = "<group>"; };
 		333ACCD997E3FBCEDA78BEAA /* controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = controller.swift; sourceTree = "<group>"; };
 		333ACD18E54F8CD632CDE1C7 /* PhoneVerificationPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneVerificationPageController.swift; sourceTree = "<group>"; };
 		333ACE9DAE3679202D4BDA6C /* libs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libs.swift; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		333ACF3CECC3A7E04B9FDFDB /* PhoneVerificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneVerificationView.swift; sourceTree = "<group>"; };
 		333ACFA9384AD1638C45CD6E /* sync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sync.swift; sourceTree = "<group>"; };
 		333ACFAEEA1068E22AFF4F19 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		333ACFEDC789F24AA3834B08 /* PhonePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhonePage.swift; path = calling/PhonePage.swift; sourceTree = "<group>"; };
 		8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
 		EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmppclient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +162,7 @@
 				FA07F966231462C000BB3A67 /* app */,
 				FA5892292303D7A100FE11FC /* registration */,
 				FA5892282303D78C00FE11FC /* kitchensink */,
+				333ACFEDC789F24AA3834B08 /* PhonePage.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -309,6 +316,7 @@
 				333AC3890BD27E2F478A6BE4 /* todo-state.swift */,
 				333AC53B674FBCE61232C89B /* todo-actions.swift */,
 				333AC7FDEF70EBFCFFBF3B25 /* todo-sequences.swift */,
+				333AC71733D8D449406651DC /* todo-reactions.swift */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -319,6 +327,7 @@
 				333AC94C6D059EF0E84CA105 /* counter-sequences.swift */,
 				333AC6389290D0E9A4FED95D /* counter-actions.swift */,
 				333AC03FB9DB6436CCB15FA1 /* counter-state.swift */,
+				333ACCD37D1F4100CD5F009D /* counter-reactions.swift */,
 			);
 			path = counter;
 			sourceTree = "<group>";
@@ -491,6 +500,9 @@
 				333AC685744B58D0323553FC /* PhoneVerificationView.swift in Sources */,
 				333AC1E338086F8ED6AB9A7F /* app-reactions.swft.swift in Sources */,
 				333AC899B07E14848F37AF81 /* sync.swift in Sources */,
+				333AC11CEE14C2B4E300968C /* counter-reactions.swift in Sources */,
+				333AC38AA12339A2B60E71EB /* todo-reactions.swift in Sources */,
+				333ACBAFB0DD63ABBAB9DF39 /* PhonePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,37 +7,32 @@ class TabbedPage: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        controller().navigationcontroller = UINavigationController(rootViewController: self)
-
         let iconList = UIImage.ionicon(with: .iosList, textColor: UIColor.orange, size: CGSize(width: 18, height: 18))
         let stopWatch = UIImage.ionicon(with: .iosStopwatch, textColor: UIColor.orange, size: CGSize(width: 18, height: 18))
+        let phoneIcon = UIImage.ionicon(with: .iosTelephone, textColor: UIColor.orange, size: CGSize(width: 18, height: 18))
 
-        let firstViewController = TodoPageController()
-        firstViewController.tabBarItem = UITabBarItem(title: "Todo", image: iconList, tag: 1)
-        firstViewController.title = "Todo"
+        let firstViewController = PhonePage()
+        firstViewController.tabBarItem = UITabBarItem(title: "Phone", image: phoneIcon, tag: 0)
+        firstViewController.title = "Phone"
 
         let secondViewController = CounterPageController()
-        secondViewController.tabBarItem = UITabBarItem(title: "Counter", image: stopWatch, tag: 0)
+        secondViewController.tabBarItem = UITabBarItem(title: "Counter", image: stopWatch, tag: 1)
         secondViewController.title = "Counter"
 
-        let viewControllersList = [secondViewController, firstViewController]
+        let thirdViewController = TodoPageController()
+        thirdViewController.tabBarItem = UITabBarItem(title: "Todo", image: iconList, tag: 2)
+        thirdViewController.title = "Todo"
+
+        let viewControllersList = [firstViewController, secondViewController, thirdViewController]
         self.viewControllers = viewControllersList.map { UINavigationController(rootViewController: $0) }
+
         controller().window.rootViewController = controller().navigationcontroller
-
-
-//        controller().window.rootViewController = WelcomePageController();
-
         controller().window.makeKeyAndVisible()
         controller().navigationcontroller.view.backgroundColor = .white
 
         self.navigationController?.view.backgroundColor = UIColor(red:247, green:247, blue:247, alpha:1)
         self.navigationController?.isNavigationBarHidden = true;
-//        controller().navigationcontroller.navigationBar.topItem?.title = "MOMO"
-        controller().navigationcontroller.navigationItem.largeTitleDisplayMode = .automatic
-
-        // run(sequence: bootstrapSequence, name: "bootstrapSequence")
-
-
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .automatic
     }
 
 

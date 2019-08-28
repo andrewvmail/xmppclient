@@ -11,6 +11,7 @@ class AppReactions {
 
             let defaults = UserDefaults.standard
             defaults.set("\(model.token)", forKey: "app.token")
+            defaults.synchronize()
         }
 
     }

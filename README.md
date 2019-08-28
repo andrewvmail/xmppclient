@@ -20,11 +20,13 @@ websocat ws://127.0.0.1:8080 > ~/Desktop/log.log 2>&1
 open https://andrewvmail.github.io/react-json-inspector/
 ```
 
+#### POC
 - [x] state debugger
-- [ ] persistence across restarts
+- [X] persistence across restarts
+- [ ] pstn call
 - [ ] connect to an ejabberd server
 - [ ] try swiftui
 
-Not in source 
-- [ ] urltype
-- [ ] plist 
+#### Not in source 
+- urltype
+- plist 

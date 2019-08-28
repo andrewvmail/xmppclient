@@ -6,5 +6,5 @@
 import Foundation
 
 final class sync {
-    let keys = ["app": "token", ]
+    let keys = ["app": "token", "todos": "todos"]
 }

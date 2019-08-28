@@ -1,20 +1,11 @@
 import Foundation
 
 func bootstrapSequence() {
-    controller().window.rootViewController = controller().navigationcontroller
-
     if tokenExist() {
-        // controller().window.rootViewController = controller().navigationcontroller
+        navSequence(page: "TabbedPage")
         return;
     }
-    // controller().navigation.pushViewController(WelcomePageController(), animated: true);
-    controller().navigation.pushViewController(WelcomePageController(), animated: false);
-    // controller().navigation.pushViewController(TabbedPage(), animated: true);
-
-    // controller().window.rootViewController = SmsVerificationPage()
-
-
-    // controller().navigation.pushViewController(SmsVerificationPage(), animated: true);
+    navSequence(page: "WelcomePage")
 }
 
 func navSequence(page: String) {
@@ -31,11 +22,10 @@ func navSequence(page: String) {
         controller().navigation.pushViewController(SmsVerificationPage(), animated: true);
     }
     if (page.contains("TabbedPage")) {
-
-
-        // controller().navigation.popToRootViewController(animated: false)
         controller().navigation.setViewControllers([TabbedPage()], animated: false)
-        // controller().navigation.pushViewController(TabbedPage(), animated: false);
+    }
+    if(page.contains("PhonePage")) {
+
     }
 }
 

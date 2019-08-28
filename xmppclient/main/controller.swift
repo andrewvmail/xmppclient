@@ -13,6 +13,8 @@ class Controller {
     let http = Http()
 
     var appReactions: AppReactions!
+    var todosReactions: TodoReactions!
+    var counterReactions: CounterReactions!
 
 
     init() {
@@ -24,14 +26,9 @@ class Controller {
 
     func setupReactions() {
         self.appReactions = AppReactions()
+        self.todosReactions = TodoReactions()
+        self.counterReactions = CounterReactions()
     }
-
-    // func getModule(name: String) -> NSObject? {
-    //     if (name.contains("app")) {
-    //         return self.state?.app
-    //     }
-    // }
-
 
     func afterInit() {
         print("afterInit")
@@ -41,9 +38,9 @@ class Controller {
         navigation.view.backgroundColor = UIColor(red: 247, green: 247, blue: 247, alpha: 1)
         navigation.isNavigationBarHidden = true;
         navigation.navigationItem.largeTitleDisplayMode = .automatic
-        run(sequence: bootstrapSequence, name: "bootstrapSequence")
         self.hydrate()
-        // self.setupReactions()
+        run(sequence: bootstrapSequence, name: "bootstrapSequence")
+        self.setupReactions()
     }
 
     func connectToDebuger() {
@@ -71,30 +68,62 @@ class Controller {
 
         let defaults = UserDefaults.standard
 
-        defaults.set("123123123", forKey: "app.token")
+        // defaults.set(["123", "234"], forKey: "todos.todos")
+        // defaults.synchronize()
 
         for key in syncKeys {
             print("\(key.value) is from \(key.key)")
 
 
-            if let value = defaults.string(forKey: "\(key.key).\(key.value)") {
-                print("got a value !!", value)
-                // hydrate the value
+            // hydrate the value
 
-                if(key.key.contains("app")) {
-
+            if (key.key.contains("app")) {
+                if let value = defaults.string(forKey: "\(key.key).\(key.value)") {
+                    print("got a value !!", value)
                     print("===")
                     state.app.setValue(value, forKeyPath: key.value)
                     print(state.app.token)
                     print("-===")
                 }
-
-                // controller()[keyPath: "app"]["token"] = value
-
-                 // self.getModule(name: key.key) {
-                //
-                // }
             }
+            // if (key.key.contains("todos")) {
+            //     if (key.value == "todos") {
+            //
+            //         print("+============", key.value)
+            //         print("+============", type(of: key.value))
+            //         print("+============")
+            //         print("+============")
+            //         print("+============")
+            //
+            //         if let value = defaults.string(forKey: "todos.todos") {
+            //             print(value)
+            //
+            //             print("+============", type(of: value))
+            //
+            //             print("*************8")
+            //         }
+            //
+            //         if let value = defaults.array(forKey: "todos.todos") {
+            //             print(value)
+            //
+            //             print("+============", type(of: value))
+            //
+            //             print("*************8")
+            //         }
+            //
+            //         if let value = defaults.array(forKey: "todos.todos") {
+            //             print(value)
+            //             state.todos.todos = value as! [String]
+            //         }
+            //     }
+            // }
+
+            // controller()[keyPath: "app"]["token"] = value
+
+            // self.getModule(name: key.key) {
+            //
+            // }
+
         }
 
         // let mirrored_object = Mirror(reflecting: syncKeys)

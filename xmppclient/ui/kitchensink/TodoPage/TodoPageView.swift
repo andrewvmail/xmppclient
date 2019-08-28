@@ -1,7 +1,7 @@
 import UIKit
 
 func TodoPageView(self: TodoPageController) {
-    self.title =  "Todo"
+    // self.title =  "Todo"
 
     let newBtn = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(self.addToDo))
     self.navigationItem.rightBarButtonItem = newBtn
