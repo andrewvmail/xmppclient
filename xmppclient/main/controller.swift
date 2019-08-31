@@ -11,6 +11,7 @@ class Controller {
     var navigation: UINavigationController!
     let db = Database()
     let http = Http()
+    let sip = Sip()
 
     var appReactions: AppReactions!
     var todosReactions: TodoReactions!
