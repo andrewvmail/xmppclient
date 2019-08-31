@@ -11,4 +11,5 @@ target 'xmppclient' do
   pod 'Alamofire', '~> 5.0.0-beta.5'
   pod 'Firebase/Auth'
   pod 'SwiftyJSON'
+  pod 'taresip'
 end
