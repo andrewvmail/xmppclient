@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         controller.window = UIWindow(frame: UIScreen.main.bounds)
-        controller.window.backgroundColor = .white
+        controller.window.backgroundColor = .white // nasty transition bug fades flick to black
         controller.navigationbar = UINavigationBar()
         controller.afterInit()
         return true

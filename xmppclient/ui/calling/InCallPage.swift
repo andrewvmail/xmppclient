@@ -1,6 +1,6 @@
 import UIKit
 
-class PhonePage: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class InCallPage: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var todos: [String] = []
     var todosObservation: NSKeyValueObservation?
@@ -28,7 +28,11 @@ class PhonePage: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
 
     @objc func buttonTapped() {
-        run(sequence: CallingSequence("clickCall").clickCall, name: "clickCall")
+        // print(textField.text)
+        // run(sequence: registration().onInputSmsCode,
+        //         name: "registration.onInputSmsCode",
+        //         props: textField.text!)
+        // print("----")
     }
 
     @IBOutlet var phoneNumberInput: UITextField!
@@ -37,16 +41,6 @@ class PhonePage: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidLoad()
         view.isOpaque = false
         view.backgroundColor = .white
-
-        // var agent: OpaquePointer? = nil
-        // var client: SipClient? = nil
-        // do {
-        //     client = try SipClient(agent: &agent)
-        // } catch {
-        //     print("error: \(error)")
-        // }
-        
-       
 
         let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tapGesture)

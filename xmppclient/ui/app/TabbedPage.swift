@@ -4,6 +4,17 @@ import IoniconsKit
 
 class TabbedPage: UITabBarController {
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setNeedsStatusBarAppearanceUpdate()
+        self.tabBar.isHidden = false
+        self.view.backgroundColor = .white
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        self.tabBar.isHidden = true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,28 +35,25 @@ class TabbedPage: UITabBarController {
         thirdViewController.title = "Todo"
 
         let viewControllersList = [firstViewController, secondViewController, thirdViewController]
-        self.viewControllers = viewControllersList.map { UINavigationController(rootViewController: $0) }
+        self.viewControllers = viewControllersList.map {
+            UINavigationController(rootViewController: $0)
+        }
 
         controller().window.rootViewController = controller().navigationcontroller
+        controller().window.rootViewController?.tabBarController?.view.backgroundColor = .white
         controller().window.makeKeyAndVisible()
         controller().navigationcontroller.view.backgroundColor = .white
 
-        self.navigationController?.view.backgroundColor = UIColor(red:247, green:247, blue:247, alpha:1)
+        // self.navigationController?.view.backgroundColor = UIColor(red: 247, green: 247, blue: 247, alpha: 1)
         self.navigationController?.isNavigationBarHidden = true;
         self.navigationController?.navigationItem.largeTitleDisplayMode = .automatic
     }
 
 
+    // override func viewWillAppear(_ animated: Bool) {
 
-
-
-
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.setNeedsStatusBarAppearanceUpdate()
-    }
-    override var preferredStatusBarStyle : UIStatusBarStyle {
+    // }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
     }
 }
@@ -61,9 +69,10 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
 extension UINavigationController {
     open override var preferredStatusBarStyle: UIStatusBarStyle {
-        if let topViewController = presentedViewController{
+        if let topViewController = presentedViewController {
             return topViewController.preferredStatusBarStyle
         }
         if let topViewController = viewControllers.last {
