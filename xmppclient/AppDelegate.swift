@@ -5,23 +5,13 @@ import FirebaseCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     let controller = Controller()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         controller.window = UIWindow(frame: UIScreen.main.bounds)
+        controller.window.backgroundColor = .white
         controller.navigationbar = UINavigationBar()
         controller.afterInit()
-
-
-
-        // let defaults = UserDefaults.standard
-        // defaults.set("Coding Explorer", forKey: "app.test")
-        //
-        // if let name = defaults.string(forKey: "app.test") {
-        //     print(name)
-        // }
-
         return true
     }
 
@@ -70,10 +60,7 @@ extension UIApplication {
 }
 
 func showToast(message: String) {
-
     if let topVC = UIApplication.getTopViewController() {
-        // topVC.view.addSubview(forgotPwdView)
-
         let toastLabel = UILabel(
                 frame: CGRect(
                         x: topVC.view.frame.size.width / 2 - 75,
