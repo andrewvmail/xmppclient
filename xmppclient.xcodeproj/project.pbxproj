@@ -36,6 +36,10 @@
 		333ACD9EFF5FC88CF0CEDE76 /* TodoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC504A342CF5E9EBBCACB /* TodoPageView.swift */; };
 		333ACDBBC9BA8577788E9754 /* counter-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333AC6389290D0E9A4FED95D /* counter-actions.swift */; };
 		42469CF4E4DEF0A8FAC4AF83 /* Pods_xmppclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */; };
+		49C26D55231B50E100014943 /* sip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C26D54231B50E100014943 /* sip.swift */; };
+		49C26D58231B517B00014943 /* PhonePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C26D57231B517B00014943 /* PhonePage.swift */; };
+		49C26D5B231B51FF00014943 /* calling-sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C26D5A231B51FF00014943 /* calling-sequence.swift */; };
+		49C26D5D231B52F600014943 /* InCallPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C26D5C231B52F500014943 /* InCallPage.swift */; };
 		FA07F968231462C000BB3A67 /* TabbedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F967231462C000BB3A67 /* TabbedPage.swift */; };
 		FA07F96C2314633300BB3A67 /* registration-sequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F96A2314633200BB3A67 /* registration-sequences.swift */; };
 		FA07F96D2314633300BB3A67 /* registration-actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07F96B2314633200BB3A67 /* registration-actions.swift */; };
@@ -82,6 +86,10 @@
 		333ACFA9384AD1638C45CD6E /* sync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sync.swift; sourceTree = "<group>"; };
 		333ACFAEEA1068E22AFF4F19 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		333ACFEDC789F24AA3834B08 /* PhonePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhonePage.swift; path = calling/PhonePage.swift; sourceTree = "<group>"; };
+		49C26D54231B50E100014943 /* sip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sip.swift; sourceTree = "<group>"; };
+		49C26D57231B517B00014943 /* PhonePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhonePage.swift; sourceTree = "<group>"; };
+		49C26D5A231B51FF00014943 /* calling-sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "calling-sequence.swift"; sourceTree = "<group>"; };
+		49C26D5C231B52F500014943 /* InCallPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InCallPage.swift; sourceTree = "<group>"; };
 		8BC3810B78E0FBD27DF054F4 /* Pods-xmppclient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.debug.xcconfig"; sourceTree = "<group>"; };
 		8BCF1A405C9B825D47F04562 /* Pods-xmppclient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xmppclient.release.xcconfig"; path = "Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient.release.xcconfig"; sourceTree = "<group>"; };
 		EAA0714B2EE7ADD7A79F3FE5 /* Pods_xmppclient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xmppclient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +167,7 @@
 		333AC7209A5B1F6E6074353D /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				49C26D56231B517B00014943 /* calling */,
 				FA07F966231462C000BB3A67 /* app */,
 				FA5892292303D7A100FE11FC /* registration */,
 				FA5892282303D78C00FE11FC /* kitchensink */,
@@ -196,6 +205,23 @@
 			path = CounterPage;
 			sourceTree = "<group>";
 		};
+		49C26D56231B517B00014943 /* calling */ = {
+			isa = PBXGroup;
+			children = (
+				49C26D5C231B52F500014943 /* InCallPage.swift */,
+				49C26D57231B517B00014943 /* PhonePage.swift */,
+			);
+			path = calling;
+			sourceTree = "<group>";
+		};
+		49C26D59231B51FF00014943 /* calling */ = {
+			isa = PBXGroup;
+			children = (
+				49C26D5A231B51FF00014943 /* calling-sequence.swift */,
+			);
+			path = calling;
+			sourceTree = "<group>";
+		};
 		F6BA94B1BB536737D261DA03 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +251,7 @@
 		FA07F970231463D100BB3A67 /* providers */ = {
 			isa = PBXGroup;
 			children = (
+				49C26D54231B50E100014943 /* sip.swift */,
 				FA07F971231463D100BB3A67 /* http.swift */,
 				FA07F972231463D100BB3A67 /* db.swift */,
 			);
@@ -270,6 +297,7 @@
 		FA58922B2303DAE300FE11FC /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				49C26D59231B51FF00014943 /* calling */,
 				FA07F9772314642E00BB3A67 /* profile-module */,
 				FA58922D2303DAF300FE11FC /* app */,
 				FA58922C2303DAEB00FE11FC /* kitchensink */,
@@ -442,24 +470,34 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IoniconsKit/IoniconsKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftAPI/SwiftAPI.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/ZKCarousel/ZKCarousel.framework",
 				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IoniconsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftAPI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZKCarousel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xmppclient/Pods-xmppclient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -472,6 +510,7 @@
 				333AC3C89A144A02A8A20ED2 /* AppDelegate.swift in Sources */,
 				FA07F973231463D100BB3A67 /* http.swift in Sources */,
 				333ACC1E7E8DA3EFA67B2D24 /* counter-sequences.swift in Sources */,
+				49C26D55231B50E100014943 /* sip.swift in Sources */,
 				333ACDBBC9BA8577788E9754 /* counter-actions.swift in Sources */,
 				333ACCD60A033D1107934CBA /* counter-state.swift in Sources */,
 				333AC93A5A6DA5EA8554A0B4 /* todo-state.swift in Sources */,
@@ -489,6 +528,7 @@
 				FA07F9792314642E00BB3A67 /* profile-store.swift in Sources */,
 				333ACC8D4DEAB6C87E6CC59C /* TodoPageController.swift in Sources */,
 				333AC19C5EAF5B731CBDDD2A /* WelcomePageController.swift in Sources */,
+				49C26D5D231B52F600014943 /* InCallPage.swift in Sources */,
 				333AC38CFA6AF5D1D5C5D194 /* WelcomePageView.swift in Sources */,
 				333AC6C13C90421297B9B15A /* app-state.swift in Sources */,
 				333AC2F66BE8391FDEB83CF0 /* app-sequences.swift in Sources */,
@@ -497,6 +537,8 @@
 				333ACB9F4E8BD30BD1C9266C /* PhoneVerificationPageController.swift in Sources */,
 				FA07F976231463FA00BB3A67 /* config.swift in Sources */,
 				FA07F968231462C000BB3A67 /* TabbedPage.swift in Sources */,
+				49C26D5B231B51FF00014943 /* calling-sequence.swift in Sources */,
+				49C26D58231B517B00014943 /* PhonePage.swift in Sources */,
 				333AC685744B58D0323553FC /* PhoneVerificationView.swift in Sources */,
 				333AC1E338086F8ED6AB9A7F /* app-reactions.swft.swift in Sources */,
 				333AC899B07E14848F37AF81 /* sync.swift in Sources */,
